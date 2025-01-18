@@ -5,7 +5,7 @@ import Intro from '@/components/investment/Intro.vue';
 </script>
 
 <template>
-    <div class="w-[95%] md:w-[85%] lg:w-[80%] ">
+    <div class="w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
         <Intro />
         <Info />
         <FaqContact />

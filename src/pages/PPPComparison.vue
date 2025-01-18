@@ -1,5 +1,5 @@
 <template>
-    <div class="min-h-screen w-[95%] md:w-[85%] lg:w-[80%] my-5">
+    <div class="min-h-screen w-[95%] md:w-[85%] lg:w-[80%] my-5mx-auto">
         <!-- Hero Section -->
         <h1 class="text-2xl md:text-4xl text-center text-bold font-bold text-black mb-4 w-4/5 mx-auto">
             Collateral-Based vs. Non-Collateral-Based Private Placement Programs (PPPs)

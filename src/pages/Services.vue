@@ -6,7 +6,7 @@ import ServiceGrid from '@/components/services/ServiceGrid.vue';
 </script>
 
 <template>
-    <div class="w-[95%] md:w-[85%] lg:w-[80%] my-5">
+    <div class="w-[95%] md:w-[85%] lg:w-[80%] mx-auto my-5">
         <Info />
         <ClientServices />
         <ServiceGrid />

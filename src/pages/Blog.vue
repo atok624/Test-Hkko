@@ -4,7 +4,7 @@ import Into from '@/components/blog/Into.vue';
 </script>
 
 <template>
-    <div class="w-[95%] md:w-[85%] lg:w-[80%] my-5">
+    <div class="w-[95%] md:w-[85%] lg:w-[80%] mx-auto my-5">
         <Info />
         <Into />
         
