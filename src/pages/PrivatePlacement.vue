@@ -1,7 +1,7 @@
 <template>
   <div class="min-h-screen w-[95%] md:w-[75%] lg:w-[70%] mx-auto my-10 bg-white text-gray-800">
     <!-- Hero Section -->
-    <div class="relative h-[300px] bg-gray-900 rounded-3xl mb-4">
+    <div class="relative h-[350px] bg-gray-900  rounded-3xl mb-12">
       <img src="/img.jpeg" alt="Private Placement Program"
         class="w-full h-full rounded-3xl object-cover opacity-50" />
       <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
@@ -16,10 +16,10 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-4xl mx-auto px-6 space-y-8 pb-12">
+    <div class="max-w-3xl mx-auto px-6 space-y-8 pb-12">
       <!-- Program Overview -->
       <section>
-        <h2 class="text-2xl font-bold mb-4">
+        <h2 class="text-3xl font-bold mb-4">
           Exclusive Private Placement Program (PPP):
           <span class="block">Earn 3% Monthly Returns</span>
         </h2>
