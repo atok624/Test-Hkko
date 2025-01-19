@@ -27,12 +27,8 @@
           <!-- Logo and mobile menu button -->
           <div class="flex items-center justify-between sm:justify-start">
             <div class="flex items-center justify-start">
-              <img src="/hkko.png" alt="HKKO Logo"
-                class="w-16 h-16 sm:w-20 sm:h-20 md:w-[75px] md:h-[75px] mr-2 sm:mr-3 md:mr-5" />
-              <div>
-                <h1 class="text-xl sm:text-2xl font-bold tracking-wider">HKKO GOLD</h1>
-                <p class="text-xs tracking-wider mt-0.5">YOUR GOLD PARTNER</p>
-              </div>
+              <img src="/LOGO-1-300x82.png" alt="HKKO Logo"
+                class="w-16 h-16 sm:w-20 sm:h-20 md:w-[250px] md:h-[75px] mr-2 sm:mr-3 md:mr-5" />
             </div>
             <!-- Mobile Hamburger Button -->
             <button @click="toggleMobileMenu" class="sm:hidden p-1.5 hover:bg-red-700 rounded-lg transition-colors"

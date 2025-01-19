@@ -16,7 +16,7 @@
           <ul class="space-y-3">
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 rounded-full border border-gray-800"></div>
-              <span class="text-gray-600">Online Trading</span>
+              <span class="text-gray-600">Private Placement</span>
             </li>
             <li class="flex items-center gap-2">
               <div class="w-2 h-2 rounded-full border border-gray-800"></div>

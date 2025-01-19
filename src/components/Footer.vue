@@ -4,11 +4,7 @@
     <div class="bg-[#6B1313] py-4 ">
       <div class="container mx-auto flex flex-col md:flex-row w-[95%] md:w-[90%] lg:w-[85%] items-center justify-between">
         <div class="flex items-center space-x-3">
-          <img src="/hkko.png" alt="HKKO GOLD" class="w-12 mb-4 md:mb-0 h-12" />
-          <div class="text-white mb-4 md:mb-0">
-            <h2 class="text-2xl font-bold">HKKO GOLD</h2>
-            <p class="text-xs">YOUR GOLD PARTNER</p>
-          </div>
+          <img src="/LOGO-1-300x82.png" alt="HKKO GOLD" class="w-30 mb-4 md:mb-0 h-12" />
         </div>
         <div class="flex-1 max-w-2xl mx-4">
           <h3 class="text-white text-center font-bold mb-4  text-base">SUBSCRIBE to our newsletter and stay informed at all times</h3>
@@ -75,8 +71,8 @@
           <div>
             <h3 class="text-base font-bold mb-4">LEGAL</h3>
             <ul class="space-y-2 text-base">
-              <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
-              <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+              <li><a href="/termsconditions" class="hover:underline">Terms & Conditions</a></li>
+              <li><a href="/privacypolicy" class="hover:underline">Privacy Policy</a></li>
               <li><a href="#" class="hover:underline">Disclaimer</a></li>
               <li><a href="#" class="hover:underline">Acceptable use Policy</a></li>
               <li><a href="#" class="hover:underline">Licenses</a></li>
