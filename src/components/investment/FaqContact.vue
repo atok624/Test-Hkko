@@ -1,23 +1,13 @@
 <template>
   <section class="bg-white py-16 mx-auto">
     <div class="container mx-auto px-4">
+      <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">
+            Frequently Asked Questions
+          </h2>
       <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
-        <!-- FAQ Text (Desktop) -->
-        <div class="hidden lg:block lg:col-span-2 relative ">
-          <div 
-            class="absolute top-1/2 left-1/2 transform  -rotate-90 origin-left text-transparent"
-            style="-webkit-text-stroke: 2px #8B0000;"
-          >
-            <span class="FAQ font-bold">FAQ</span>
-          </div>
-        </div>
 
         <!-- Questions Section -->
-        <div class="lg:col-span-6">
-          <h2 class="text-3xl lg:text-4xl font-bold mb-8 text-gray-800">
-            Have Any Questions?
-          </h2>
-          
+        <div class="lg:col-span-7">
           <div class="space-y-4">
             <div 
               v-for="(item, index) in faqItems" 
@@ -49,12 +39,12 @@
         </div>
 
         <!-- Appointment Form -->
-        <div class="lg:col-span-4 bg-red-900 px-6 py-8 rounded-lg text-white">
+        <div class="lg:col-span-5 bg-red-900 px-6 py-8 rounded-lg text-white">
           <h2 class="text-2xl font-bold mb-2 text-center">
             Schedule An Appointment
           </h2>
           <p class="text-center text-base mb-6">
-            Lorem Ipsum is simply dummy
+            Fill the form below to reach out to us.
           </p>
           
           <form @submit.prevent="handleSubmit" class="space-y-4">
