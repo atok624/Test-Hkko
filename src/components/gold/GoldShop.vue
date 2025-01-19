@@ -1,14 +1,14 @@
 <template>
-  <div class="container mx-auto md:px-32 px-4 py-6">
+  <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto px-4 py-6">
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar Filters -->
-      <aside class="w-full lg:w-64 flex-shrink-0">
-        <h2 class="text-base font-semibold text-gray-800 mb-6">Filter</h2>
+      <aside class="w-full lg:w-64 flex-shrink-0 mr-4">
+        <h2 class="text-lg font-semibold text-gray-800 mb-6">Filter</h2>
         
         <!-- Type of Product -->
         <div class="mb-6">
           <div class="flex justify-between items-center mb-4">
-            <h3 class="text-sm font-medium text-gray-700">Type of product</h3>
+            <h3 class="text-base font-medium text-gray-700">Type of product</h3>
             <button 
               @click="clearFilters"
               class="text-red-600 hover:text-red-800 text-sm"
@@ -29,14 +29,14 @@
                 v-model="selectedTypes"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-sm text-gray-600">{{ type }}</span>
+              <span class="text-base text-gray-600">{{ type }}</span>
             </label>
           </div>
         </div>
 
         <!-- Price Range -->
         <div class="mb-6">
-          <h3 class="text-sm font-medium text-gray-700 mb-3">Price per product</h3>
+          <h3 class="text-base font-medium text-gray-700 mb-3">Price per product</h3>
           <div class="space-y-2">
             <label 
               v-for="range in priceRanges" 
@@ -49,14 +49,14 @@
                 v-model="selectedPriceRanges"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-sm text-gray-600">{{ range }}</span>
+              <span class="text-base text-gray-600">{{ range }}</span>
             </label>
           </div>
         </div>
 
         <!-- Weight -->
         <div class="mb-6">
-          <h3 class="text-sm font-medium text-gray-700 mb-3">Weight</h3>
+          <h3 class="text-base font-medium text-gray-700 mb-3">Weight</h3>
           <div class="space-y-2">
             <label 
               v-for="weight in weights" 
@@ -69,7 +69,7 @@
                 v-model="selectedWeights"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-sm text-gray-600">{{ weight }}</span>
+              <span class="text-base text-gray-600">{{ weight }}</span>
             </label>
           </div>
         </div>
@@ -78,12 +78,12 @@
       <!-- Main Content -->
       <main class="flex-1">
         <div class="flex justify-between items-center mb-6">
-          <h1 class="text-2xl font-bold text-gray-800">Shop Gold Products</h1>
+          <h1 class="text-2xl font-bold text-gray-800 mb-6">Shop Gold Products</h1>
           
           <!-- Sort Dropdown -->
           <select 
             v-model="sortOrder"
-            class="border-gray-300 rounded-md text-gray-600 px-4 py-1 text-xs"
+            class="border-gray-300 rounded-md text-gray-600 px-4 py-1 text-sm"
           >
             <option value="" disabled>Select sorting option &nbsp;</option>
             <option value="high-to-low">Price: High to Low</option>
