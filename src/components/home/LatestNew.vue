@@ -1,9 +1,9 @@
 <template>
-  <section class="py-16 w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
+  <section class="py-16 w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
     <div class="container mx-auto">
-      <h2 class="text-3xl font-bold text-center text-gray-900 mb-12">Latest News</h2>
+      <h2 class="text-4xl font-bold text-center text-gray-900 mb-12">Latest News</h2>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         <article 
           v-for="article in articles" 
           :key="article.id"
@@ -18,17 +18,17 @@
           </div>
 
           <div class="p-6 flex flex-col flex-grow">
-            <h3 class="text-base font-bold text-gray-900 mb-3">
+            <h3 class="text-lg font-bold text-gray-900 mb-3">
               {{ article.title }}
             </h3>
 
-            <p class="text-gray-600 mb-4 text-sm">
+            <p class="text-gray-600 mb-4 text-base">
               {{ article.description }}
             </p>
 
             <a 
               :href="article.link"
-              class="inline-block text-xs text-[#8B1818] font-semibold hover:text-[#6B1313] transition-colors duration-200 mt-auto"
+              class="inline-block text-sm text-[#8B1818] font-bold hover:text-[#6B1313] transition-colors duration-200 mt-auto"
             >
               READ MORE »
             </a>
@@ -73,15 +73,7 @@
       author: 'truetechstudios',
       date: 'April 15, 2024'
     },
-    {
-      id: 4,
-      title: 'Online Trading',
-      description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text',
-      image: '/scattered-table.jpg',
-      link: '#',
-      author: 'truetechstudios',
-      date: 'April 15, 2024'
-    }
+    
   ]
   </script>
   

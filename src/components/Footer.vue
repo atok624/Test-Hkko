@@ -2,7 +2,7 @@
   <footer>
     <!-- Newsletter Banner -->
     <div class="bg-[#6B1313] py-4 ">
-      <div class="container mx-auto flex flex-col md:flex-row w-[95%] md:w-[90%] lg:w-[85%] items-center justify-between">
+      <div class="container mx-auto flex flex-col md:flex-row w-[95%] md:w-[80%] lg:w-[75%] items-center justify-between">
         <div class="flex items-center space-x-3">
           <a href="/"><img src="/LOGO-1-300x82.png" alt="HKKO GOLD" class="w-30 mb-4 md:mb-0 h-12" /></a>
         </div>
@@ -28,22 +28,21 @@
 
     <!-- Navigation Links -->
     <div class="bg-[#8B1818] text-white py-12 ">
-      <div class="container w-[95%] md:w-[90%] lg:w-[85%] mx-auto">
+      <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
         <div class="grid grid-cols-2 pl-5  md:grid-cols-3 lg:grid-cols-6 gap-4">
           <!-- Shop Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">SHOP</h3>
+            <h3 class="text-base font-black mb-4">SHOP</h3>
             <ul class="space-y-2 text-base">
               <li><a href="/gold" class="hover:underline">Gold</a></li>
               <li><a href="/silver" class="hover:underline">Silver</a></li>
-              <li><a href="investment" class="hover:underline">Investment Plans</a></li>
-              <li><a href="/private-placement" class="hover:underline">PPP</a></li>
+              <li><a href="investment" class="hover:underline">Online Trading</a></li>
             </ul>
           </div>
 
           <!-- Account Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">ACCOUNT</h3>
+            <h3 class="text-base font-black mb-4">ACCOUNT</h3>
             <ul class="space-y-2 text-base">
               <li><a href="#" class="hover:underline">Wallet</a></li>
               <li><a href="#" class="hover:underline">History</a></li>
@@ -56,7 +55,7 @@
 
           <!-- Resources Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">RESOURCES</h3>
+            <h3 class="text-base font-black mb-4">RESOURCES</h3>
             <ul class="space-y-2 text-base">
               <li><a href="/blog" class="hover:underline">Blog</a></li>
               <li><a href="#" class="hover:underline">Buyers Guide</a></li>
@@ -69,20 +68,19 @@
 
           <!-- Legal Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">LEGAL</h3>
+            <h3 class="text-base font-black mb-4">LEGAL</h3>
             <ul class="space-y-2 text-base">
               <li><a href="/termsconditions" class="hover:underline">Terms & Conditions</a></li>
               <li><a href="/privacypolicy" class="hover:underline">Privacy Policy</a></li>
               <li><a href="#" class="hover:underline">Disclaimer</a></li>
               <li><a href="#" class="hover:underline">Acceptable use Policy</a></li>
               <li><a href="#" class="hover:underline">Licenses</a></li>
-              <li><a href="#" class="hover:underline">Bankers</a></li>
             </ul>
           </div>
 
           <!-- Assistance Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">ASSISTANCE</h3>
+            <h3 class="text-base font-black mb-4">ASSISTANCE</h3>
             <ul class="space-y-2 text-base">
               <li><a href="#" class="hover:underline">Request A Call Back</a></li>
               <li><a href="#" class="hover:underline">Pricing</a></li>
@@ -93,7 +91,7 @@
 
           <!-- Company Section -->
           <div>
-            <h3 class="text-base font-bold mb-4">COMPANY</h3>
+            <h3 class="text-base font-black mb-4">COMPANY</h3>
             <ul class="space-y-2 text-base">
               <li><a href="/about" class="hover:underline">About Us</a></li>
               <li><a href="#" class="hover:underline">Selling</a></li>
@@ -108,8 +106,8 @@
     </div>
 
     <!-- Bottom Bar -->
-    <div class="bg-[#6B1313] text-white py-4 px-4 md:px-36">
-      <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+    <div class="bg-[#6B1313] text-white py-4 px-4 ">
+      <div class="container mx-auto flex flex-col w-[95%] md:w-[80%] lg:w-[75%] mx-auto md:flex-row justify-between items-center">
         <p class="text-sm mb-1 md:mb-0">Copyright © {{ new Date().getFullYear() }} Test Site | All rights reserved</p>
         <p class="text-sm">Developed and Designed by True Tech Studios</p>
       </div>

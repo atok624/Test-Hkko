@@ -1,8 +1,8 @@
 <template>
   <section class="py-16">
-    <div class="container w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
+    <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
       <!-- Category Tabs -->
-      <div class="flex justify-center mx-auto border-b md:w-[40%] md:text-base sm:text-xs border-red-200 mb-8">
+      <div class="flex justify-center mx-auto border-b md:w-[42%] md:text-base sm:text-xs border-red-200 mb-8">
         <div class="flex">
           <button
             v-for="tab in tabs"
@@ -11,7 +11,7 @@
             :class="[
               'px-4 py-2 font-bold transition-colors duration-200 relative text-sm sm:text-base lg:text-lg',
               activeTab === tab 
-                ? 'text-red-600' 
+                ? 'text-red-800' 
                 : 'text-gray-600 hover:text-red-800'
             ]"
           >
@@ -33,7 +33,7 @@
       </div>
 
       <!-- Product Grid -->
-      <div class="grid grid-cols-1 text-sm md:text-base sm:grid-cols-1 lg:grid-cols-4 gap-6">
+      <div class="grid grid-cols-1 text-base md:text-base sm:grid-cols-1 lg:grid-cols-4 gap-6">
         <div 
           v-for="product in filteredProducts" 
           :key="product.id"
@@ -48,8 +48,8 @@
           </div>
 
           <div class="text-center">
-            <div class="text-base font-bold mb-2">${{ product.price.toFixed(2) }}</div>
-            <h3 class="text-sm font-medium text-gray-800 mb-4">{{ product.name }}</h3>
+            <div class="text-lg font-bold mb-2">${{ product.price.toFixed(2) }}</div>
+            <h3 class="text-base font-medium text-gray-800 mb-4">{{ product.name }}</h3>
             
             <div class="flex justify-center gap-2">
               <button 

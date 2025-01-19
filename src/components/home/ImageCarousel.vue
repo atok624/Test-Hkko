@@ -1,5 +1,5 @@
 <template>
-    <div class="relative w-[95%] md:w-[85%] lg:w-[80%] mt-6 mx-auto">
+    <div class="relative w-[95%] md:w-[80%] lg:w-[75%] mt-6 mx-auto">
       <!-- Carousel Container -->
       <div 
         class="overflow-hidden rounded-[2rem]"
@@ -16,11 +16,11 @@
             :key="index"
             class="w-full flex-shrink-0"
           >
-            <img 
+            <a href="/gold"><img 
               :src="slide.image" 
               :alt="slide.alt"
-              class="w-full h-[400px] object-cover"
-            />
+              class="w-full h-[350px] object-cover"
+            /></a>
           </div>
         </div>
       </div>
@@ -64,11 +64,11 @@
   
   const slides = [
     {
-      image: '/HKKO Gold Banner 1.png',
+      image: '/Artboard (1).png',
       alt: 'Financial charts on laptop and mobile device'
     },
     {
-      image: '/HKKO Gold Banner 2.png',
+      image: '/Artboard2.png',
       alt: 'Second slide description'
     },
     

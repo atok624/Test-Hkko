@@ -1,9 +1,9 @@
 <template>
   <div class=" bg-[#8B1818] py-16">
-    <div class="container w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
-      <div class="grid lg:grid-cols-3 gap-1">
+    <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
+      <div class="grid lg:grid-cols-8 gap-8">
         <!-- Calculator Section -->
-        <div class="lg:col-span-2 mx-auto w-4/5 mb-4">
+        <div class="lg:col-span-5 mx-auto mb-4 mr-6">
           <h2 class="text-3xl font-bold text-white mb-4">Gold Calculator</h2>
           <p class="text-white/90 text-base mb-8">
             Get started now. Select a metal, enter a budget, and our savings assistant will help you start!
@@ -60,7 +60,7 @@
         </div>
 
         <!-- Information Card -->
-        <div class="bg-[#A92323] p-8 rounded-lg">
+        <div class="bg-[#A92323] p-8 rounded-lg lg:col-span-3">
           <h3 class="text-xl font-bold text-white mb-4">New To Gold Investment?</h3>
           <p class="text-white/90 text-sm mb-4">
             Find out more about us and our investment options with an information pack sent direct to you through the post.
