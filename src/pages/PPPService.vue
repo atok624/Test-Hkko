@@ -1,6 +1,6 @@
 <template>
     <main class="bg-gray-100 py-4 text-lg text-gray-700">
-        <div class="w-[95%] md:w-[85%] lg:w-[65%] mx-auto">
+        <div class="w-[95%] md:w-[85%] lg:w-[55%] mx-auto">
             <!-- Title -->
             <h1 class="text-4xl text-start font-bold my-4">Private Placement Program</h1>
 
@@ -86,12 +86,12 @@
                             technology.</span>
                     </div>
                     <div class="flex my-6">
-                        <span class="font-medium">Steady Returns:</span>
+                        <span class="font-bold">Steady Returns:</span>
                         <span class="">Once your investment is active, you'll start
                             receiving regular returns, delivered directly to your preferred account.</span>
                     </div>
                     <div class="flex my-6">
-                        <span class="font-medium">Portfolio Updates:</span>
+                        <span class="font-bold">Portfolio Updates:</span>
                         <span class="">Receive regular updates on the progress of
                             your investment, including project milestones, financial performance, and market
                             insights.</span>
