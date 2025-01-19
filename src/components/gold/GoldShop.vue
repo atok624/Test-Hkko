@@ -1,14 +1,14 @@
 <template>
-  <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto px-4 py-6">
+  <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto px-4 py-12">
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar Filters -->
-      <aside class="w-full lg:w-64 flex-shrink-0 mr-4">
-        <h2 class="text-lg font-semibold text-gray-800 mb-6">Filter</h2>
+      <aside class="w-full lg:w-64 flex-shrink-0 mr-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Filter</h2>
         
         <!-- Type of Product -->
         <div class="mb-6">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-base font-medium text-gray-700">Type of product</h3>
+          <div class="flex justify-between items-center">
+            <h3 class="text-base font-bold text-gray-700">Type of product</h3>
             <button 
               @click="clearFilters"
               class="text-red-600 hover:text-red-800 text-sm"
@@ -17,7 +17,7 @@
             </button>
           </div>
           
-          <div class="space-y-2">
+          <div class="space-y-4 mt-4">
             <label 
               v-for="type in productTypes" 
               :key="type"
@@ -35,13 +35,13 @@
         </div>
 
         <!-- Price Range -->
-        <div class="mb-6">
-          <h3 class="text-base font-medium text-gray-700 mb-3">Price per product</h3>
-          <div class="space-y-2">
+        <div class="my-8">
+          <h3 class="text-base font-bold text-gray-700 mb-3">Price per product</h3>
+          <div class="space-y-4">
             <label 
               v-for="range in priceRanges" 
               :key="range"
-              class="flex items-center space-x-3"
+              class="flex items-center space-x-4"
             >
               <input
                 type="checkbox"
@@ -55,13 +55,13 @@
         </div>
 
         <!-- Weight -->
-        <div class="mb-6">
-          <h3 class="text-base font-medium text-gray-700 mb-4">Weight</h3>
-          <div class="space-y-2">
+        <div class="my-8">
+          <h3 class="text-base font-bold text-gray-700 mb-4">Weight</h3>
+          <div class="space-y-4">
             <label 
               v-for="weight in weights" 
               :key="weight"
-              class="flex items-center space-x-3"
+              class="flex items-center space-x-4"
             >
               <input
                 type="checkbox"
@@ -78,14 +78,14 @@
       <!-- Main Content -->
       <main class="flex-1">
         <div class="flex justify-between items-center mb-6">
-          <h1 class="text-2xl font-bold text-gray-800 mb-6">Shop Gold Products</h1>
+          <h1 class="text-2xl font-bold text-gray-800 ">Shop Gold Products</h1>
           
           <!-- Sort Dropdown -->
           <select 
             v-model="sortOrder"
-            class="border-gray-300 rounded-md text-gray-600 px-4 py-2 text-sm"
+            class="border-gray-300 rounded-md text-gray-600 px-4 text-sm"
           >
-            <option value="" disabled>Select sorting option &nbsp;</option>
+            <option value="" disabled>Select sorting option &nbsp; &nbsp; &nbsp;</option>
             <option value="high-to-low">Price: High to Low</option>
             <option value="low-to-high">Price: Low to High</option>
           </select>
@@ -107,8 +107,8 @@
           </div>
 
           <div class="text-center px-6 pb-3">
-            <div class="text-base font-bold mb-2">${{ product.price.toFixed(2) }}</div>
-            <h3 class="text-sm font-medium text-gray-800 mb-4">{{ product.name }}</h3>
+            <div class="text-lg font-bold mb-2">${{ product.price.toFixed(2) }}</div>
+            <h3 class="text-base font-medium text-gray-800 mb-4">{{ product.name }}</h3>
             
             <div class="flex justify-center gap-2">
               <button 
