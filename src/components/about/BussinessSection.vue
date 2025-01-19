@@ -1,14 +1,14 @@
 <template>
   <div class="py-16 bg-gray-100">
     <div class=" px-4 w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
-      <div class="grid grid-cols-1 md:grid-cols-12 gap-20 items-start mr-8">
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-20  items-center mr-8">
         <!-- Image Column -->
         <div class="relative col-span-5">
         <div class="bg-red-900/10 absolute inset-0 rounded-lg"></div>
         <img 
           src="/WhatsApp Image 2024-12-22 at 10.41.29 AM.jpeg"
           alt="HKKO Gold Bar with Lion Emblem"
-          class="w-full h-100 rounded-lg shadow-xl relative z-10"
+          class="w-full h-[550px] object-cover  rounded-lg shadow-xl relative z-10"
         />
       </div>
 
