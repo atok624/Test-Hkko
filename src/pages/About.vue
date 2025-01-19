@@ -1,5 +1,5 @@
 <template>
-    <div class="w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
+    <div>
         <About/>
         <BusinessInfo/>
         <BussinessSection/>

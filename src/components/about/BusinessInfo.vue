@@ -1,5 +1,5 @@
 <template>
-  <div class=" mx-auto px-4 py-12">
+  <div class=" w-[95%] md:w-[80%] lg:w-[75%] mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <!-- Text Content -->
       <div class="col-span-7">
@@ -22,7 +22,7 @@
       <div class="relative col-span-5">
         <div class="bg-red-900/10 absolute inset-0 rounded-lg mx-auto"></div>
         <img 
-          src="/src/images/3aef89c1-a881-4a61-839c-853d69192aa7.jpeg"
+          src="/3aef89c1-a881-4a61-839c-853d69192aa7.jpeg"
           alt="HKKO Gold Bar with Lion Emblem"
           class="w-full h-auto mx-auto rounded-lg shadow-xl relative z-10"
         />

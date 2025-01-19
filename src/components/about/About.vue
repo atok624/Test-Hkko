@@ -1,6 +1,6 @@
 <template>
-    <section class="py-6 mx-auto px-4">
-      <div class="container mx-auto">
+    <section class="py-10">
+      <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
         <div class="bg-pink-50 rounded-[48px] py-24 px-6">
           <div class="max-w-3xl mx-auto text-center">
             <h2 class="text-[#8B1818] text-5xl font-bold mb-6">

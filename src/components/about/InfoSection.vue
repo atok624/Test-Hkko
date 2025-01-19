@@ -1,11 +1,11 @@
 <template>
-  <div class=" px-4 py-12">
+  <div class=" px-4 py-12 w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <!-- Image Column -->
       <div class="relative col-span-5">
         <div class="bg-red-900/10 absolute inset-0 rounded-lg"></div>
         <img 
-          src="/src/images/3aef89c1-a881-4a61-839c-853d69192aa7.jpeg"
+          src="/3aef89c1-a881-4a61-839c-853d69192aa7.jpeg"
           alt="Global Fine Gold Bars"
           class="w-full h-auto rounded-lg shadow-xl relative z-10"
         />

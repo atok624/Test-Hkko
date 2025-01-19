@@ -1,5 +1,5 @@
 <template>
-    <div class="container px-4 py-8">
+    <div class="container px-4 py-8 w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Light Gray Card -->
         <div class="bg-gray-100 rounded-lg px-6 py-12">
