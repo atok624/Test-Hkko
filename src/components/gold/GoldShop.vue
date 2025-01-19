@@ -21,7 +21,7 @@
             <label 
               v-for="type in productTypes" 
               :key="type"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-3"
             >
               <input
                 type="checkbox"
@@ -41,7 +41,7 @@
             <label 
               v-for="range in priceRanges" 
               :key="range"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-3"
             >
               <input
                 type="checkbox"
@@ -56,12 +56,12 @@
 
         <!-- Weight -->
         <div class="mb-6">
-          <h3 class="text-base font-medium text-gray-700 mb-3">Weight</h3>
+          <h3 class="text-base font-medium text-gray-700 mb-4">Weight</h3>
           <div class="space-y-2">
             <label 
               v-for="weight in weights" 
               :key="weight"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-3"
             >
               <input
                 type="checkbox"
@@ -83,7 +83,7 @@
           <!-- Sort Dropdown -->
           <select 
             v-model="sortOrder"
-            class="border-gray-300 rounded-md text-gray-600 px-4 py-1 text-sm"
+            class="border-gray-300 rounded-md text-gray-600 px-4 py-2 text-sm"
           >
             <option value="" disabled>Select sorting option &nbsp;</option>
             <option value="high-to-low">Price: High to Low</option>
@@ -170,7 +170,7 @@ const priceRanges = [
   '$500.00 - $1,000.00',
   '$1,000.00 - $2,000.00',
   '$2,000.00 - $3,000.00',
-  '$3,000.00 - $+'
+  '$3,000.00+'
 ]
 const selectedPriceRanges = ref([])
 
@@ -179,7 +179,7 @@ const weights = [
   '200 - 50 grams',
   '50 - 100 grams',
   '100 - 200 grams',
-  '200 - + grams'
+  '200+ grams'
 ]
 const selectedWeights = ref([])
 
