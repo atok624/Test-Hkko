@@ -1,14 +1,14 @@
 <template>
-  <div class="min-h-screen w-[95%] md:w-[85%] lg:w-[80%] mx-auto my-5 bg-white text-gray-800">
+  <div class="min-h-screen w-[95%] md:w-[75%] lg:w-[70%] mx-auto my-10 bg-white text-gray-800">
     <!-- Hero Section -->
-    <div class="relative h-[250px] bg-gray-900 rounded-3xl mb-4">
-      <img src="/golden-rmb-coins-cloth-bag.jpg" alt="Private Placement Program"
+    <div class="relative h-[300px] bg-gray-900 rounded-3xl mb-4">
+      <img src="/img.jpeg" alt="Private Placement Program"
         class="w-full h-full rounded-3xl object-cover opacity-50" />
       <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
-        <h1 class="text-3xl font-bold text-white mb-2">
+        <h1 class="text-4xl font-bold text-white mb-2">
           Private Placement Program
         </h1>
-        <p class="text-white text-base md:w-1/2 text-center">
+        <p class="text-white text-lg w-3/4 text-center">
           Earn a 3% monthly return with our Private Placement Program, backed by gold assets and industry expertise,
           offering stable, high-yield investments managed transparently.
         </p>
