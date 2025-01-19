@@ -14,10 +14,10 @@
       <!-- Content Column -->
       <div class="space-y-6 col-span-7">
         <h2 class="text-4xl font-bold text-gray-800">
-          A little info about business make it as catchy as possible
+          Gold Ownership Symbolizes Wealth, Legacy, & Lasting Value.
         </h2>
         
-        <p class="text-gray-700 leading-relaxed">
+        <p class="text-gray-700 leading-relaxed text-lg">
           Driven by customer satisfaction, we create meaningful relationships and provide Certified Guarantees to ensure lasting value. Believing that gold symbolizes wealth, legacy, and enduring memories, our products are crafted to become treasured heirlooms for future generations.
         </p>
 

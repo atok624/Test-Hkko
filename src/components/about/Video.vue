@@ -7,7 +7,7 @@
             <h2 class="text-4xl font-bold text-gray-800">
               Unmatched Bullion Services and Premium Craftsmanship
             </h2>
-            <p class="text-gray-700 leading-relaxed">
+            <p class="text-gray-700 leading-relaxed text-lg">
               HKKO GOLD offers 999.9 purity bullion bars and beautifully crafted mint bars, meticulously designed using advanced technology for flawless results and exceptional quality. With a commitment to precision and innovation, we supply high-quality materials such as plates, rods, wires, and grains to jewelry manufacturers.
             </p>
           </div>
