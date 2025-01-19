@@ -37,7 +37,7 @@
           <!-- Shop Section -->
           <div>
             <h3 class="text-base font-bold mb-4">SHOP</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="/gold" class="hover:underline">Gold</a></li>
               <li><a href="/silver" class="hover:underline">Silver</a></li>
               <li><a href="investment" class="hover:underline">Investment Plans</a></li>
@@ -48,7 +48,7 @@
           <!-- Account Section -->
           <div>
             <h3 class="text-base font-bold mb-4">ACCOUNT</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="#" class="hover:underline">Wallet</a></li>
               <li><a href="#" class="hover:underline">History</a></li>
               <li><a href="#" class="hover:underline">Items in Storage</a></li>
@@ -61,7 +61,7 @@
           <!-- Resources Section -->
           <div>
             <h3 class="text-base font-bold mb-4">RESOURCES</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="/blog" class="hover:underline">Blog</a></li>
               <li><a href="#" class="hover:underline">Buyers Guide</a></li>
               <li><a href="#" class="hover:underline">Sellers Guide</a></li>
@@ -74,7 +74,7 @@
           <!-- Legal Section -->
           <div>
             <h3 class="text-base font-bold mb-4">LEGAL</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
               <li><a href="#" class="hover:underline">Privacy Policy</a></li>
               <li><a href="#" class="hover:underline">Disclaimer</a></li>
@@ -87,7 +87,7 @@
           <!-- Assistance Section -->
           <div>
             <h3 class="text-base font-bold mb-4">ASSISTANCE</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="#" class="hover:underline">Request A Call Back</a></li>
               <li><a href="#" class="hover:underline">Pricing</a></li>
               <li><a href="#" class="hover:underline">Storage Guide</a></li>
@@ -98,7 +98,7 @@
           <!-- Company Section -->
           <div>
             <h3 class="text-base font-bold mb-4">COMPANY</h3>
-            <ul class="space-y-2 text-sm">
+            <ul class="space-y-2 text-base">
               <li><a href="/about" class="hover:underline">About Us</a></li>
               <li><a href="#" class="hover:underline">Selling</a></li>
               <li><a href="#" class="hover:underline">Bulk Buying</a></li>

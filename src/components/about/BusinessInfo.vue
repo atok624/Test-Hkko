@@ -7,7 +7,7 @@
           A little info about business make it as catchy as possible
         </h2>
         
-        <div class="space-y-3">
+        <div class="space-y-3 mx-auto">
           <p class="text-gray-700 leading-relaxed">
             HKKO Gold is a fiduciary gold company established to resolve a significant impediment to gold procurement, particularly in sourcing the precious metal from African origins. With a visionary approach and a commitment to innovation, HKKO Gold was founded to address these challenges.
           </p>
@@ -20,11 +20,11 @@
 
       <!-- Image -->
       <div class="relative col-span-5">
-        <div class="bg-red-900/10 absolute inset-0 rounded-lg"></div>
+        <div class="bg-red-900/10 absolute inset-0 rounded-lg mx-auto"></div>
         <img 
           src="/src/images/3aef89c1-a881-4a61-839c-853d69192aa7.jpeg"
           alt="HKKO Gold Bar with Lion Emblem"
-          class="w-full h-auto rounded-lg shadow-xl relative z-10"
+          class="w-full h-auto mx-auto rounded-lg shadow-xl relative z-10"
         />
       </div>
     </div>
