@@ -1,13 +1,13 @@
 <template>
     <main class="bg-gray-100 py-4 text-lg text-gray-700">
-        <div class="w-[95%] md:w-[85%] lg:w-[75%] mx-auto">
+        <div class="w-[95%] md:w-[85%] lg:w-[65%] mx-auto">
             <!-- Title -->
             <h1 class="text-4xl text-start font-bold my-4">Private Placement Program</h1>
 
             <!-- Hero Image -->
             <div class="mb-8">
                 <img src="/hkko1.png" alt="Financial analysis on laptop"
-                    class="w-full h-[300px] object-cover" />
+                    class="w-full h-[450px] object-cover" />
             </div>
 
             <!-- Introduction Text -->
