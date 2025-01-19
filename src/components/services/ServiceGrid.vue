@@ -12,7 +12,7 @@
         <p class="text-white/90 mb-6">
           This program offers accredited investors exclusive opportunities to earn monthly returns. It combines asset security, expert management, and consistent returns, providing a stable, high-yield investment solution tailored for financial growth.
         </p>
-        <a href="/pppservices" class="text-white font-bold hover:text-white/90 absolute bottom-8 left-0 right-0">Learn More</a>
+        <a href="/pppservices" class="text-white font-bold hover:text-white/90 absolute bottom-5 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Trading -->
@@ -26,7 +26,7 @@
         <p class="text-gray-600 mb-6">
           Our online platform connects buyers and sellers securely, ensuring transparent and efficient gold trading. Rigorous verification, trusted couriers, and real-time pricing empower confident investment decisions.
         </p>
-        <a href="/trading" class="text-red-900 font-bold hover:text-red-800 absolute bottom-8 left-0 right-0">Learn More</a>
+        <a href="/trading" class="text-red-900 font-bold hover:text-red-800 absolute bottom-5 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Refining -->
@@ -40,7 +40,7 @@
         <p class="text-gray-600 mb-6">
           We refine your gold with utmost care, ensuring exceptional purity for investments or industrial needs. We prioritize sustainability and global quality standards to deliver exceptional, refined products.
         </p>
-        <a href="/refining" class="text-red-900 hover:text-red-800 font-bold absolute bottom-8 left-0 right-0">Learn More</a>
+        <a href="/refining" class="text-red-900 hover:text-red-800 font-bold absolute  bottom-5 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Custom Minting -->
@@ -54,7 +54,7 @@
         <p class="text-gray-600 mb-6">
           We provide custom minting services, transforming your raw gold into personalized coins, bars, and items. We create unique, flawless metal pieces for any special or commemorative occasion.
         </p>
-        <a href="/mintpage" class="text-red-900 hover:text-red-800 font-bold absolute bottom-8 left-0 right-0">Learn More</a>
+        <a href="/mintpage" class="text-red-900 hover:text-red-800 font-bold mt-4 absolute bottom-5 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Vaulting & Storage -->
@@ -68,7 +68,7 @@
         <p class="text-gray-600 mb-6">
           Protect your gold with our secure vaulting services. Our advanced security features and on-demand monitoring provide peace of mind. Store and secure your assets with short-term or long-term storage options.
         </p>
-        <a href="/vaultingstorage" class="text-red-900 hover:text-red-800 absolute font-bold bottom-8 left-0 right-0">Learn More</a>
+        <a href="/vaultingstorage" class="text-red-900 hover:text-red-800 mt-4 absolute font-bold bottom-5 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Treasury Services -->
@@ -82,7 +82,7 @@
         <p class="text-gray-600 mb-6">
           Entrust your historical gold artefacts and heirlooms to our expert treasury services. We offer appraisals, preservation, and secure storage, ensuring your valuable assets are protected and their authenticity is maintained.
         </p>
-        <a href="/treasuryservices" class="text-red-900 hover:text-red-800 absolute bottom-8 left-0 right-0">Learn More</a>
+        <a href="/treasuryservices" class="text-red-900 hover:text-red-800 absolute bottom-5 left-0 right-0">Learn More</a>
       </div>
     </div>
   </div>
