@@ -16,7 +16,7 @@
     </div>
 
     <!-- Main Content -->
-    <div class="max-w-3xl mx-auto px-6 space-y-8 pb-12">
+    <div class="max-w-4xl mx-auto px-6 space-y-8 pb-12">
       <!-- Program Overview -->
       <section>
         <h2 class="text-3xl font-bold mb-4">
@@ -198,9 +198,9 @@
 
 
       <!-- Disclaimer -->
-      <div class="text-sm text-gray-500 text-center mt-8">
-        <h4 class="font-bold mb-2">Disclaimer</h4>
-        <p>
+      <div class=" text-gray-500 text-center ">
+        <h4 class="font-bold mb-2 text-xl mt-12">Disclaimer</h4>
+        <p class="text-base">
           This document is for informational purposes only and does not constitute an offer or solicitation to sell
           shares or securities. Any such offer or solicitation will be made only by means of a confidential Private
           Placement Memorandum and in accordance with the terms of all applicable securities and other laws.
