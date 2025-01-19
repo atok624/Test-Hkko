@@ -1,7 +1,7 @@
 <template>
   <div class="mx-auto py-8"> 
     <section class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
-      <h2 class="text-3xl font-bold text-center mb-8">Our Modules</h2>
+      <h2 class="text-3xl font-bold text-center my-8">Our Modules</h2>
       
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="service in services" :key="service.title" class="bg-white rounded-br-3xl shadow-lg overflow-hidden flex flex-col h-full">
