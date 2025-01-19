@@ -1,6 +1,6 @@
 <template>
   <div class="py-16 bg-gray-100">
-    <div class="max-w-5xl mx-auto px-4 md:px-6">
+    <div class=" px-4 md:px-6">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-start">
         <!-- Image Column -->
         <div class="relative col-span-5">

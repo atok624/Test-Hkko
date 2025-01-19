@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-5xl mx-auto px-4 py-12">
+  <div class=" mx-auto px-4 py-12">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
       <!-- Text Content -->
       <div class="col-span-7">

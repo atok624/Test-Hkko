@@ -1,6 +1,6 @@
 <template>
   <div class="bg-black py-16">
-    <div class="max-w-5xl mx-auto px-4">
+    <div class=" px-4">
       <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         <!-- Text Content -->
         <div class="space-y-4 col-span-1">
