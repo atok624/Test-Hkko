@@ -115,7 +115,6 @@
               <div v-if="item.name === 'Resources' || item.name === 'Invest'" @click="toggleDropdown(item.name)"
                 class="flex items-center  hover:text-red-200 cursor-pointer transition-colors duration-200 whitespace-nowrap">
                 {{ item.name }}
-                <ChevronDown class="w-4 h-4 ml-1" />
               </div>
               <router-link v-else :to="item.path"
                 class=" font-bold hover:text-red-200 cursor-pointer transition-colors duration-200 whitespace-nowrap"
