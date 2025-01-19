@@ -2,21 +2,21 @@
   <div class="max-w-7xl mx-auto font-semibold px-4 py-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
       <!-- Online Trading -->
-      <div class="bg-red-900 rounded-lg p-6 text-center h-[420px] relative">
+      <div class="bg-red-900 rounded-lg p-6 text-center max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center">
             <CreditCard class="w-6 h-6 text-red-900" />
           </div>
         </div>
         <h3 class="text-xl font-bold text-white mb-4">Private Placement</h3>
-        <p class="text-white/90 mb-8">
-          Our Private Placement Program offers accredited investors exclusive opportunities to earn monthly returns. Backed by gold-related projects, it combines asset security, expert management, and consistent returns, providing a stable, high-yield investment solution tailored for financial growth.
+        <p class="text-white/90 mb-6">
+          This program offers accredited investors exclusive opportunities to earn monthly returns. It combines asset security, expert management, and consistent returns, providing a stable, high-yield investment solution tailored for financial growth.
         </p>
         <a href="/pppservices" class="text-white hover:text-white/90 absolute bottom-8 left-0 right-0">Learn More</a>
       </div>
 
       <!-- Trading -->
-      <div class="bg-white rounded-lg p-8 text-center shadow-lg h-[420px] relative">
+      <div class="bg-white rounded-lg p-8 text-center shadow-lg max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
             <Wallet class="w-6 h-6 text-white" />
@@ -30,7 +30,7 @@
       </div>
 
       <!-- Refining -->
-      <div class="bg-white rounded-lg p-8 text-center shadow-lg h-[420px] relative">
+      <div class="bg-white rounded-lg p-8 text-center shadow-lg max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
             <Factory class="w-6 h-6 text-white" />
@@ -44,7 +44,7 @@
       </div>
 
       <!-- Custom Minting -->
-      <div class="bg-white rounded-lg p-8 text-center shadow-lg h-[420px] relative">
+      <div class="bg-white rounded-lg p-8 text-center shadow-lg max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
             <Coins class="w-6 h-6 text-white" />
@@ -58,7 +58,7 @@
       </div>
 
       <!-- Vaulting & Storage -->
-      <div class="bg-white rounded-lg p-8 text-center shadow-lg h-[420px] relative">
+      <div class="bg-white rounded-lg p-8 text-center shadow-lg max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
             <Shield class="w-6 h-6 text-white" />
@@ -72,7 +72,7 @@
       </div>
 
       <!-- Treasury Services -->
-      <div class="bg-white rounded-lg p-8 text-center shadow-lg h-[420px] relative">
+      <div class="bg-white rounded-lg p-8 text-center shadow-lg max-h-[400px] relative">
         <div class="flex justify-center mb-4">
           <div class="w-12 h-12 rounded-full bg-red-900 flex items-center justify-center">
             <Building2 class="w-6 h-6 text-white" />
