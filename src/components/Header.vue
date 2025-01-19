@@ -6,7 +6,7 @@
     <header class="bg-red-900 w-full text-white">
       <!-- Top bar -->
       <div class="bg-red-800 flex w-full ">
-        <div class="flex justify-between items-center w-[95%] md:w-[80%] lg:w-[75%] py-1.5 text-sm mx-auto"
+        <div class="flex justify-between items-center w-[95%] md:w-[80%] lg:w-[75%] py-2.5 text-sm mx-auto"
           :class="{ 'hidden': isNavFixed }">
           <div class="font-bold tracking-wide text-xs">GOLD LIVE PRICE &nbsp; | &nbsp; SILVER LIVE PRICES</div>
           <div class="space-x-4 sm:space-x-6">
@@ -102,14 +102,14 @@
 
       <!-- Navigation (Tablet & Desktop) -->
       <nav ref="mainNav"
-        class="hidden sm:block w-full bg-red-900 sm:px-8 z-40 md:px-16 py-2 transition-all duration-500 ease-in-out"
+        class="hidden sm:block w-full bg-red-900 sm:px-8 z-40 md:px-16 py-3 transition-all duration-500 ease-in-out"
         :class="{
           'fixed top-0 left-0 right-0 z-100 shadow-lg': isNavFixed,
           'transform -translate-y-full': isNavFixed && !isScrollingUp,
           'transform translate-y-0': isNavFixed && isScrollingUp,
           'relative': !isNavFixed
         }">
-        <ul class="flex flex-wrap justify-center font-bold space-x-6 sm:space-x-8 md:space-x-8">
+        <ul class="flex flex-wrap justify-center font-black space-x-6 sm:space-x-8 md:space-x-8">
           <li v-for="(item, index) in menuItems" :key="`menu-${index}`" class="relative">
             <div @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
               <div v-if="item.name === 'Resources' || item.name === 'Invest'" @click="toggleDropdown(item.name)"
