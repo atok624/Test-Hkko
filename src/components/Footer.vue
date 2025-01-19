@@ -4,7 +4,7 @@
     <div class="bg-[#6B1313] py-4 ">
       <div class="container mx-auto flex flex-col md:flex-row w-[95%] md:w-[90%] lg:w-[85%] items-center justify-between">
         <div class="flex items-center space-x-3">
-          <img src="/LOGO-1-300x82.png" alt="HKKO GOLD" class="w-30 mb-4 md:mb-0 h-12" />
+          <a href="/"><img src="/LOGO-1-300x82.png" alt="HKKO GOLD" class="w-30 mb-4 md:mb-0 h-12" /></a>
         </div>
         <div class="flex-1 max-w-2xl mx-4">
           <h3 class="text-white text-center font-bold mb-4  text-base">SUBSCRIBE to our newsletter and stay informed at all times</h3>

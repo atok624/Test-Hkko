@@ -6,7 +6,7 @@
     <header class="bg-red-900 w-full text-white">
       <!-- Top bar -->
       <div class="bg-red-800 flex w-full ">
-        <div class="flex justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] py-1.5 text-sm mx-auto"
+        <div class="flex justify-between items-center w-[95%] md:w-[80%] lg:w-[75%] py-1.5 text-sm mx-auto"
           :class="{ 'hidden': isNavFixed }">
           <div class="font-bold tracking-wide text-xs">GOLD LIVE PRICE &nbsp; | &nbsp; SILVER LIVE PRICES</div>
           <div class="space-x-4 sm:space-x-6">
@@ -22,13 +22,13 @@
       <!-- Main header -->
       <div class="w-full">
         <div
-          class="flex flex-col lg:flex-row md:flex-col  justify-between items-center w-[95%] md:w-[90%] lg:w-[85%] py-6 sm:py-4 gap-4 sm:gap-6 md:gap-8 mx-auto"
+          class="flex flex-col lg:flex-row md:flex-col  justify-between items-center w-[95%] md:w-[85%] lg:w-[75%] py-6 sm:py-4 gap-4 sm:gap-6 md:gap-8 mx-auto"
           :class="{ 'hidden': isNavFixed }">
           <!-- Logo and mobile menu button -->
           <div class="flex items-center justify-between sm:justify-start">
             <div class="flex items-center justify-start">
-              <img src="/LOGO-1-300x82.png" alt="HKKO Logo"
-                class="w-16 h-16 sm:w-20 sm:h-20 md:w-[250px] md:h-[75px] mr-2 sm:mr-3 md:mr-5" />
+              <a href="/"> <img src="/LOGO-1-300x82.png" alt="HKKO Logo"
+                class="w-16 h-16 sm:w-20 sm:h-20 md:w-[250px] md:h-[75px] mr-2 sm:mr-3 md:mr-5" /></a>
             </div>
             <!-- Mobile Hamburger Button -->
             <button @click="toggleMobileMenu" class="sm:hidden p-1.5 hover:bg-red-700 rounded-lg transition-colors"
