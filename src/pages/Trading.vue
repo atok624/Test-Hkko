@@ -1,6 +1,6 @@
 <template>
     <main class="bg-gray-100 py-4 text-lg text-gray-700">
-        <div class="w-[95%] md:w-[85%] lg:w-[55%] mx-auto">
+        <div class="w-[90%] md:w-[85%] lg:w-[55%] mx-auto">
             <h1 class="text-4xl text-start font-bold my-4">Trading</h1>
 
             <div class="mb-8">

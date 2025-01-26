@@ -1,6 +1,6 @@
 <template>
   <div class="py-10 bg-gray-50">
-    <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
+    <div class="container w-[90%] md:w-[80%] lg:w-[75%] mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <!-- Left Column -->
         <div>

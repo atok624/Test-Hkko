@@ -1,6 +1,6 @@
 <template>
   <div class="w-[95%] md:w-[85%] lg:w-[55%] bg-white mx-auto" items-center>
-    <h1 class="text-5xl text-center font-bold leading-15 md:mx-10 my-4">A Comprehensive Guide to Private Placement
+    <h1 class="md:text-5xl text-2xl text-center font-bold leading-15 md:mx-10 my-4">A Comprehensive Guide to Private Placement
       Programs (PPPs)</h1>
     <div class="relative h-[300px] rounded-3xl bg-gray-900 mb-8">
       <img src="/golden-rmb-coins-cloth-bag.jpg" alt="Trading interface on mobile"

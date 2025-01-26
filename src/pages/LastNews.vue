@@ -1,5 +1,5 @@
 <template>
-    <div class=" bg-white p-6 my-10 w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
+    <div class=" w-[95%] md:w-[85%] lg:w-[55%] my-5 mx-auto">
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
             <!-- Main Content -->
             <div class="lg:col-span-2">

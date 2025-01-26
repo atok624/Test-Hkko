@@ -134,7 +134,7 @@
         </section>
   
         <!-- Why Customers Choose Us -->
-        <section class="mt-12 bg-gray-100 text-[18px] md:p-6">
+        <section class="mt-12 bg-gray-100 p-6 text-[18px] md:p-6">
           <h2 class="text-3xl font-bold text-red-900 text-center underline my-4">Why Customers Choose Us</h2>
           <div class="space-y-6">
             <div>

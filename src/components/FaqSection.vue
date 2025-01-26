@@ -39,7 +39,7 @@
             <div
               v-show="item.isOpen"
               :id="`faq-${groupIndex}-${itemIndex}`"
-              class="px-6 pb-4 text-gray-600"
+              class="p-6 bg-gray-50 text-gray-900"
             >
               {{ item.answer }}
             </div>

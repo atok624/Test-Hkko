@@ -33,46 +33,46 @@
     </h2>
 
     <ul class="space-y-4 mb-8">
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Security:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           The collateral provides an added layer of protection for the investor. If the investment fails or the program doesn't deliver the expected returns, the investor's collateral can be used to recover the lost funds. This offers a level of risk mitigation.
-        </p>
+        </span>
       </li>
 
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Lower Risk:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           Because the program is backed by tangible assets, collateral-based PPPs tend to be less risky than their non-collateral-based counterparts. The presence of collateral helps to reassure investors that their capital is protected.
-        </p>
+        </span>
       </li>
 
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Collateral Options:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           Depending on the program, the collateral can be in various forms such as cash, gold, real estate, or even other securities. The choice of collateral can influence the risk profile and return potential of the investment.
-        </p>
+        </span>
       </li>
 
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Higher Minimum Investment:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           Since collateral is involved, investors may need to commit a larger minimum investment to participate in collateral-based PPPs. This can be a barrier for some investors but provides more security for those who are able to invest larger amounts.
-        </p>
+        </span>
       </li>
 
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Liquidity Risk:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           If the collateralized asset is illiquid, it may be difficult to quickly convert it into cash.
-        </p>
+        </span>
       </li>
 
-      <li class="flex gap-2">
+      <li class="gap-2">
         <span class="font-bold">Valuation Risks:</span>
-        <p class="text-gray-700">
+        <span class="text-gray-700">
           Accurately valuing collateral can be challenging, especially in volatile markets.
-        </p>
+        </span>
       </li>
     </ul>
 
@@ -119,18 +119,18 @@
 
                 <h3 class="text-xl font-bold mb-4">Key Features of Non-Collateral-Based PPPs:</h3>
                 <ul class="space-y-4 mb-6">
-                    <li class="flex">
-                        <span class="font-bold">Higher Risk:</span>
-                        <p class="text-gray-700">Without collateral, these programs typically carry more risk.</p>
+                    <li class="">
+                        <span class="font-bold">Higher Risk: </span>
+                        <span class="text-gray-700">Without collateral, these programs typically carry more risk.</span>
                     </li>
-                    <li class="flex">
-                        <span class="font-bold">Lower Entry Requirements:</span>
-                        <p class="text-gray-700">No need to provide significant assets upfront.</p>
+                    <li class="">
+                        <span class="font-bold">Lower Entry Requirements: </span>
+                        <span class="text-gray-700">No need to provide significant assets upfront.</span>
                     </li>
-                    <li class="flex">
-                        <span class="font-bold">Flexible Terms:</span>
-                        <p class="text-gray-700">Often offers more flexibility in terms of investment duration and
-                            withdrawal options.</p>
+                    <li class="">
+                        <span class="font-bold">Flexible Terms: </span>
+                        <span class="text-gray-700">Often offers more flexibility in terms of investment duration and
+                            withdrawal options.</span>
                     </li>
                 </ul>
 
