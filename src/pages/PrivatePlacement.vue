@@ -5,7 +5,7 @@
       <img src="/img.jpeg" alt="Private Placement Program"
         class="w-full h-full rounded-3xl object-cover opacity-50" />
       <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
-        <h1 class="text-4xl font-bold text-white mb-2">
+        <h1 class="text-4xl font-bold text-center text-white mb-2">
           Private Placement Program
         </h1>
         <p class="text-white text-lg w-3/4 text-center">
@@ -172,14 +172,14 @@
       </section>
 
       <!-- FAQ Section -->
-      <section class="flex gap-8">
+      <section class="md:flex gap-8">
         <div class="space-y-2 flex-1">
           <h2 class="text-2xl font-bold">Frequently Asked Questions</h2>
           <div v-for="(faq, index) in faqs" :key="index" class=" border-gray-200 pb-4">
             <h3 class="font-bold bg-red-300 p-3 cursor-pointer" @click="toggleFaq(index)">
               {{ faq.question }}
             </h3>
-            <p class="text-gray-600" :class="{ hidden: !faq.isVisible }">
+            <p class="text-gray-600 p-3 bg-gray-50" :class="{ hidden: !faq.isVisible }">
               {{ faq.answer }}
             </p>
           </div>

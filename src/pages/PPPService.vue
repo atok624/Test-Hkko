@@ -1,7 +1,7 @@
 <template>
     <main class="bg-gray-100 py-4 text-lg text-gray-700">
         <div class="w-[95%] md:w-[85%] lg:w-[55%] mx-auto">
-            <!-- Title -->0
+            <!-- Title -->
             <h1 class="text-4xl text-start font-bold my-4">Private Placement Program</h1>
 
             <!-- Hero Image -->
@@ -23,7 +23,7 @@
 
                 <div class="space-y-6">
                     <div>
-                        <h3 class="font-bold my-6">1. Reliable Returns</h3>
+                        <h3 class="font-bold my-6 text-center">1. Reliable Returns</h3>
                         <p class="">
                             Our PPP offers a dependable income stream, providing consistent returns over time. Whether
                             you're diversifying your portfolio or building long-term wealth, this program ensures
@@ -32,7 +32,7 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold my-6">2. Gold-Backed Investments</h3>
+                        <h3 class="font-bold my-6 text-center">2. Gold-Backed Investments</h3>
                         <p class="">Your funds are allocated to projects in
                             the gold industry, including:</p>
                         <ul class="space-y-2 ml-5 list-disc">
@@ -45,7 +45,7 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold my-6">3. Expert Management</h3>
+                        <h3 class="font-bold my-6 text-center">3. Expert Management</h3>
                         <p class="">
                             With years of leadership in the gold industry, our team ensures your investments are managed
                             with diligence and precision. By leveraging market insights and advanced risk management
@@ -54,7 +54,7 @@
                     </div>
 
                     <div>
-                        <h3 class="font-bold my-6">4. Personalized Service</h3>
+                        <h3 class="font-bold my-6 text-center">4. Personalized Service</h3>
                         <p class="">
                             We tailor our solutions to meet your financial goals, keeping you informed and confident at
                             every step of your investment journey.
