@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-      <div v-if="show" class="fixed top-4 right-4 bg-red-600 text-white p-4 rounded-md shadow-lg z-50">
+      <div v-if="show" class="fixed top-4 right-4 bg-red-600 text-[#bce8d3] p-4 rounded-md shadow-lg z-50">
         Item added to cart successfully!
       </div>
     </transition>

@@ -1,7 +1,7 @@
 <template>
     <main class="bg-gray-100 py-4 text-lg text-gray-700">
         <div class="w-[95%] md:w-[85%] lg:w-[55%] mx-auto">
-            <!-- Title -->
+            <!-- Title -->0
             <h1 class="text-4xl text-start font-bold my-4">Private Placement Program</h1>
 
             <!-- Hero Image -->

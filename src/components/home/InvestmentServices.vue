@@ -1,8 +1,6 @@
 <template>
-  <div class="mx-auto py-8"> 
+  <div class="mx-auto py-8 pt-20"> 
     <section class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
-      <h2 class="text-3xl font-bold text-center my-8">Our Modules</h2>
-      
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-for="service in services" :key="service.title" class="bg-white rounded-br-3xl shadow-lg overflow-hidden flex flex-col h-full">
           <div class="relative overflow-hidden">
@@ -38,12 +36,7 @@
 import { ChevronRightIcon, RepeatIcon } from 'lucide-vue-next'
 
 const services = [
-  {
-    title: 'Private Placement Program',
-    description: 'Earn a 3% monthly return with our Private Placement Program, backed by gold assets and industry expertise, offering stable, high-yield investments managed transparently.',
-    image: '/PPP.png',
-    link: '/private-placement'
-  },
+  
   {
     title: 'Gold and Silver Savings',
     description: 'Stop saving in the bank! Your bank savings loses value. Save in gold and silver today, Protect your wealth, beat inflation and secure your financial future with us.',
@@ -55,6 +48,12 @@ const services = [
     description: 'Trade with confidence on our platform. Buy, sell, or exchange your physical gold or silver effortlessly with verified listings, insured delivery, and real-time pricing.',
     image: '/HKKO GOLD Online 11 (1).png',
     link: '/online-trading'
+  },
+  {
+    title: 'Private Placement Program',
+    description: 'Earn a 3% monthly return with our Private Placement Program, backed by gold assets and industry expertise, offering stable, high-yield investments managed transparently.',
+    image: '/PPP.png',
+    link: '/private-placement'
   }
 ]
 </script>

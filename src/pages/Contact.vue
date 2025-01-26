@@ -1,99 +1,120 @@
 <template>
-    <main class="bg-white py-8">
-      <div class="w-[90%] md:w-[80%] lg:w-[75%] mx-auto">
-        <div class="grid md:grid-cols-2 gap-8 mb-12">
-          <!-- Contact Form -->
-          <div>
-            <h1 class="text-[32px] font-normal text-[#333] mb-6">Contact Us</h1>
-            <p class="text-[15px] leading-[1.6] text-[#666] mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
-            </p>
+  <div class="py-10 bg-gray-50">
+    <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div>
+          <h1 class="text-[30px] font-bold mt-20 py-5">Let's Get In Touch</h1>
+          <p class="text-[18px] mb-8">
+            We'd love to hear from you! Whether you have questions about our services, need a quote, or want to discuss how we can help elevate your brand, our team at HKKO GOLD is here to assist you.
+          </p>
+
+          <div class="space-y-6 text-[18px]">
+            <div class="flex items-center gap-3">
+              <span class="text-[#8B1D1D]">📧</span>
+              <a href="mailto:info@hkkogold.com" class=" hover:text-[#8B1D1D]">
+                info@hkkogold.com
+              </a>
+            </div>
             
-            <form @submit.prevent="handleSubmit" class="space-y-4">
-              <div>
-                <input 
-                  type="text" 
-                  placeholder="Name" 
-                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B0000] focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <input 
-                  type="text" 
-                  placeholder="Name" 
-                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B0000] focus:border-transparent"
-                  required
-                />
-              </div>
-              <div>
-                <textarea 
-                  rows="4" 
-                  placeholder="Message" 
-                  class="w-full p-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B0000] focus:border-transparent"
-                  required
-                ></textarea>
-              </div>
-              <button 
-                type="submit"
-                class="w-full bg-[#8B0000] text-white py-3 rounded-md hover:bg-[#6B0000] transition-colors"
-              >
-                Send
-              </button>
-            </form>
-          </div>
-  
-          <!-- Contact Details -->
-          <div class="bg-[#8B0000] text-white p-8 rounded-lg">
-            <h2 class="text-2xl font-medium mb-8">Contact Details</h2>
-            
-            <div class="space-y-6">
-              <div class="flex items-center gap-4">
-                <Mail className="h-6 w-6" />
-                <span>info@hkkogold.com</span>
-              </div>
-              
-              <div class="flex items-center gap-4">
-                <Phone className="h-6 w-6" />
-                <span>+233 24 490 6455</span>
-              </div>
-              
-              <div class="flex items-center gap-4">
-                <MapPin className="h-6 w-6" />
-                <span>2nd Brakwatso Loop, Accra</span>
-              </div>
-              
-              <div class="flex items-center gap-4">
-                <Clock className="h-6 w-6" />
-                <span>07:00am - 06:00pm | Mon - Sat</span>
-              </div>
+            <div class="flex items-center gap-3">
+              <span class="text-[#8B1D1D]">🎧</span>
+              <a href="mailto:support@hkkogold.com" class=" hover:text-[#8B1D1D]">
+                support@hkkogold.com
+              </a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="text-[#8B1D1D]">📞</span>
+              <a href="tel:+233 24 490 6455" class=" hover:text-[#8B1D1D]">
+                +233 24 490 6455
+              </a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <span class="text-[#8B1D1D]">📍</span>
+              <span class="">
+                9 Ayikuma Street Adabraka Accra Ghana
+              </span>
             </div>
           </div>
+
+          <div class="flex gap-4 mt-8">
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8B1D1D] text-white rounded-md hover:bg-[#7A1919]">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8B1D1D] text-white rounded-md hover:bg-[#7A1919]">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8B1D1D] text-white rounded-md hover:bg-[#7A1919]">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="#" class="w-10 h-10 flex items-center justify-center bg-[#8B1D1D] text-white rounded-md hover:bg-[#7A1919]">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </div>
         </div>
-  
-        <!-- Map -->
-        <div class="h-[400px] w-full rounded-lg overflow-hidden">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3970.9367661075087!2d-0.1870537!3d5.6145745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9c7c681c9ed9%3A0x3b0b0b0b0b0b0b0b!2sHKKO%20GOLD!5e0!3m2!1sen!2sgh!4v1620000000000!5m2!1sen!2sgh"
-            width="100%"
-            height="100%"
-            style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+
+        <!-- Right Column -->
+        <div class="bg-white rounded-lg shadow-lg p-8">
+          <h2 class="text-[28px] font-normal text-[#333] mb-6">Contact Us</h2>
+          <p class="text-[15px] leading-[1.6] text-[#666] mb-8">
+            We value your feedback and inquiries! If you have any questions, comments, or would like to learn more about our services, please leave us a message using the form below.
+          </p>
+
+          <form class="space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <input 
+                  type="text" 
+                  placeholder="Name" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B1D1D]"
+                />
+              </div>
+              <div>
+                <input 
+                  type="tel" 
+                  placeholder="Phone" 
+                  class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B1D1D]"
+                />
+              </div>
+            </div>
+
+            <div>
+              <input 
+                type="email" 
+                placeholder="Email" 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B1D1D]"
+              />
+            </div>
+
+            <div>
+              <textarea 
+                placeholder="Message" 
+                rows="4" 
+                class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#8B1D1D]"
+              ></textarea>
+            </div>
+
+            <button 
+              type="submit"
+              class="w-full py-3 px-6 bg-[#8B1D1D] text-white rounded-md hover:bg-[#7A1919] transition-colors"
+            >
+              Submit
+            </button>
+          </form>
         </div>
       </div>
-    </main>
-  </template>
-  
-  <script setup>
-  import { Mail, Phone, MapPin, Clock } from 'lucide-vue-next'
-  
-  const handleSubmit = (event) => {
-    // Handle form submission
-    console.log('Form submitted')
-  }
-  </script>
-  
-  
+    </div>
+
+    
+  </div>
+</template>
+
+<script setup>
+// Component is static, no reactive state needed
+</script>
+
+<style>
+
+</style>

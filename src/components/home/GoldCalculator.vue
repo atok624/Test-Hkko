@@ -4,8 +4,8 @@
       <div class="grid lg:grid-cols-8 gap-8">
         <!-- Calculator Section -->
         <div class="lg:col-span-5 mx-auto mb-4 mr-6">
-          <h2 class="text-3xl font-bold text-white mb-4">Gold Calculator</h2>
-          <p class="text-white/90 text-base mb-8">
+          <h2 class="text-3xl font-bold text-center text-white mb-4">Gold Calculator</h2>
+          <p class="text-white/90 text-center text-base mb-8">
             Get started now. Select a metal, enter a budget, and our savings assistant will help you start!
           </p>
 

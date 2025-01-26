@@ -176,10 +176,11 @@ const selectedPriceRanges = ref([])
 
 const weights = [
   '< 10 grams',
-  '200 - 50 grams',
+  '10 - 50 grams',
   '50 - 100 grams',
   '100 - 200 grams',
-  '200+ grams'
+  '200 - 500 grams',
+  '500+ grams'
 ]
 const selectedWeights = ref([])
 

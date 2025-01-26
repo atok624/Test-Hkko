@@ -26,9 +26,9 @@
           :class="{ 'hidden': isNavFixed }">
           <!-- Logo and mobile menu button -->
           <div class="flex items-center justify-between sm:justify-start">
-            <div class="flex items-center justify-start">
+            <div class="">
               <a href="/"> <img src="/LOGO-1-300x82.png" alt="HKKO Logo"
-                class="w-16 h-16 sm:w-20 sm:h-20 md:w-[250px] md:h-[75px] mr-2 sm:mr-3 md:mr-5" /></a>
+                class="w-[200px]  mr-2 sm:mr-3 md:mr-5" /></a>
             </div>
             <!-- Mobile Hamburger Button -->
             <button @click="toggleMobileMenu" class="sm:hidden p-1.5 hover:bg-red-700 rounded-lg transition-colors"
@@ -112,7 +112,7 @@
         <ul class="flex flex-wrap justify-center font-black space-x-6 sm:space-x-8 md:space-x-8">
           <li v-for="(item, index) in menuItems" :key="`menu-${index}`" class="relative">
             <div @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
-              <div v-if="item.name === 'Resources' || item.name === 'Invest'" @click="toggleDropdown(item.name)"
+              <div v-if="item.name === 'Resources' || item.name === 'Invest' || item.name === 'Services'" @click="toggleDropdown(item.name)"
                 class="flex items-center  hover:text-red-200 cursor-pointer transition-colors duration-200 whitespace-nowrap">
                 {{ item.name }}
               </div>
@@ -148,6 +148,9 @@
                 class="absolute left-1/2 transform -translate-x-1/2 top-full mt-2 text-sm bg-white shadow-md rounded-md z-50 w-40 text-gray-800"
                 @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
                 <li>
+                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-200">Invest</router-link>
+              </li>
+                <li>
                 <router-link to="#" class="block px-4 py-2 hover:bg-red-200">Investor information</router-link>
               </li>
               <li>
@@ -172,6 +175,34 @@
                 <router-link to="/pppguide" class="block px-4 py-2 hover:bg-red-200">PPP Guide</router-link>
               </li>
               </ul>
+              <ul v-if="item.name === 'Services' && dropdownOpenFor === 'Services'"
+                class="absolute left-1/2 transform -translate-x-1/2 top-full mt-2 text-sm bg-white shadow-md rounded-md z-50 w-40 text-gray-800"
+                @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
+                <li>
+                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">Services</router-link>
+              </li>
+              <li>
+                <router-link to="/pppservices" class="block px-4 py-2 hover:bg-red-200">PPP Services</router-link>
+              </li>
+              <li>
+                <router-link to="/trading" class="block px-4 py-2 hover:bg-red-200">Trading</router-link>
+              </li>
+              <li>
+                <router-link to="/refining" class="block px-4 py-2 hover:bg-red-200">Refining</router-link>
+              </li>
+              <li>
+                <router-link to="/mintpage" class="block px-4 py-2 hover:bg-red-200">Custom Minting</router-link>
+              </li>
+              <li>
+                <router-link to="/vaultingstorage" class="block px-4 py-2 hover:bg-red-200">Vaulting and Storage</router-link>
+              </li>
+              <li>
+                <router-link to="/treasuryservices" class="block px-4 py-2 hover:bg-red-200">Treasury Services</router-link>
+              </li>
+              <li>
+                <router-link to="/globallogistics" class="block px-4 py-2 hover:bg-red-200">transportation</router-link>
+              </li>
+              </ul>
             </div>
           </li>
         </ul>
@@ -182,12 +213,12 @@
         <ul class="space-y-3">
           <li v-for="(item, index) in menuItems" :key="`mobile-menu-${index}`" class="relative">
             <div
-              @click="item.name === 'Resources' || item.name === 'Invest' ? toggleDropdown(item.name) : navigateTo(item.path)"
+              @click="item.name === 'Resources' || item.name === 'Invest' || item.name === 'Services'? toggleDropdown(item.name) : navigateTo(item.path)"
               class="flex justify-between items-center cursor-pointer font-bold hover:text-red-200">
               <span>{{ item.name }}</span>
-              <span v-if="item.name === 'Resources' || item.name === 'Invest'">
-                <ChevronDown v-if="dropdownOpenFor !== item.name" class="w-4 h-4" />
-                <ChevronUp v-else class="w-4 h-4" />
+              <span v-if="item.name === 'Resources' || item.name === 'Invest' || item.name === 'Services'">
+                <!-- <ChevronDown v-if="dropdownOpenFor !== item.name" class="w-4 h-4" />
+                <ChevronUp v-else class="w-4 h-4" /> -->
               </span>
             </div>
             <!-- Mobile Dropdown for Resources -->
@@ -215,6 +246,9 @@
             <ul v-if="item.name === 'Invest' && dropdownOpenFor === 'Invest'"
               class="mt-2 bg-red-800 rounded-md text-sm">
               <li>
+                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-700">Invest</router-link>
+              </li>
+              <li>
                 <router-link to="#" class="block px-4 py-2 hover:bg-red-700">Investor information</router-link>
               </li>
               <li>
@@ -239,6 +273,33 @@
                 <router-link to="/pppguide" class="block px-4 py-2 hover:bg-red-700">PPP Guide</router-link>
               </li>
             </ul>
+            <ul v-if="item.name === 'Services' && dropdownOpenFor === 'Services'"
+                class="mt-2 bg-red-800 rounded-md text-sm">
+                <li>
+                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">Services</router-link>
+              </li>
+              <li>
+                <router-link to="/pppservices" class="block px-4 py-2 hover:bg-red-200">PPP Services</router-link>
+              </li>
+              <li>
+                <router-link to="/trading" class="block px-4 py-2 hover:bg-red-200">Trading</router-link>
+              </li>
+              <li>
+                <router-link to="/refining" class="block px-4 py-2 hover:bg-red-200">Refining</router-link>
+              </li>
+              <li>
+                <router-link to="/mintpage" class="block px-4 py-2 hover:bg-red-200">Custom Minting</router-link>
+              </li>
+              <li>
+                <router-link to="/vaultingstorage" class="block px-4 py-2 hover:bg-red-200">Vaulting and Storage</router-link>
+              </li>
+              <li>
+                <router-link to="/treasuryservices" class="block px-4 py-2 hover:bg-red-200">Treasury Services</router-link>
+              </li>
+              <li>
+                <router-link to="/globallogistics" class="block px-4 py-2 hover:bg-red-200">transportation</router-link>
+              </li>
+              </ul>
           </li>
         </ul>
       </nav>

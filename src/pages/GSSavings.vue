@@ -1,122 +1,222 @@
 <template>
-  <div class=" bg-white p-6 my-10 w-[95%] md:w-[85%] lg:w-[80%] mx-auto">
-      <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
-          <!-- Main Content -->
-          <div class="lg:col-span-2">
-              <article class="space-y-6">
-                  <img src="../images/financial-sector.jpg" alt="Featured image" class="w-full rounded-lg" />
-
-                  <div class="flex items-center gap-3 text-sm ">
-                      <span class="flex items-center gap-2">
-                          <UserIcon class="h-4 w-4" />
-                          TrustedProvider
-                      </span>
-                      <span>April 15, 2024</span>
-                  </div>
-
-                  <h1 class="text-xl font-bold">Gold & Silver Savings</h1>
-
-                  <div class="prose prose-invert max-w-none">
-                      <p class="mb-4 text-sm">
-                          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                          been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a
-                          galley of type and scrambled it to make a type specimen book. It has survived not only five
-                          centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                          It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                          passages, and more recently with desktop publishing software like Aldus PageMaker including
-                          versions of Lorem Ipsum.
-                      </p>
-
-                      <h2 class="text-xl font-bold mt-8 mb-4">Why do we use it?</h2>
-                      <p class="mb-4 text-sm">
-                          It is a long established fact that a reader will be distracted by the readable content of a
-                          page when looking at its layout. The point of using Lorem Ipsum is that it has a
-                          more-or-less normal distribution of letters, as opposed to using ‘Content here, content
-                          here’, making it look like readable English. Many desktop publishing packages and web page
-                          editors now use Lorem Ipsum as their default model text, and a search for ‘lorem ipsum’ will
-                          uncover many web sites still in their infancy. Various versions have evolved over the years,
-                          sometimes by accident, sometimes on purpose (injected humour and the like).
-                      </p>
-
-                      <h2 class="text-xl font-bold mt-8 mb-4">Where does it come from?</h2>
-                      <p class="mb-4 text-sm">
-                          Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece
-                          of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock,
-                          a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure
-                          Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the
-                          word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from
-                          sections 1.10.32 and 1.10.33 of “de Finibus Bonorum et Malorum” (The Extremes of Good and
-                          Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very
-                          popular during the Renaissance. The first line of Lorem Ipsum, “Lorem ipsum dolor sit
-                          amet..”, comes from a line in section 1.10.32.
-                      </p>
-                  </div>
-              </article>
+    <div class="w-[95%] md:w-[85%] lg:w-[55%] mx-auto my-10 bg-white text-gray-800">
+      <!-- Hero Section -->
+      <div class="relative h-[350px] bg-gray-900  rounded-3xl mb-12">
+        <img 
+          src="/Gold & Silver Savings.png" 
+          alt="Gold and silver trading interface" 
+          class="w-full h-full rounded-3xl object-cover opacity-50" />
+        <div class="absolute inset-0 flex flex-col justify-center items-center px-6 md:px-12">
+          <div class="max-w-[1200px] mx-auto px-6 h-full flex flex-col justify-center">
+            <h1 class="text-[32px] font-bold text-center text-white mb-4">Gold and Silver Savings</h1>
+            <p class="text-[18px] text-white/90 text-center max-w-[600px]">
+              Start saving in the world's most resilient asset values with Gold, Invest in gold and silver today. Protect your wealth, beat inflation and secure your financial future with us.
+            </p>
           </div>
-
-          <!-- Sidebar -->
-          <div class="lg:col-span-1 space-y-8">
-              <!-- Subscribe Form -->
-              <div class="bg-red-900 p-6 rounded-lg">
-                  <h3 class="text-xl font-bold mb-4">Subscribe</h3>
-                  <p class="text-sm text-gray-300 mb-4">
-                      Lorem ipsum is simply dummy text of the printing and typesetting industry.
-                  </p>
-                  <form class="space-y-3">
-                      <input type="email" placeholder="Email"
-                          class="w-full px-4 py-2 rounded-lg bg-white" />
-                      <button type="submit"
-                          class="w-full bg-yellow-500 text-black font-semibold py-2 rounded-lg hover:bg-yellow-400 transition-colors">
-                          Subscribe
-                      </button>
-                  </form>
-              </div>
-
-              <!-- More Posts -->
-              <div class="bg-pink-100 p-6 rounded-lg">
-                  <h3 class="text-xl font-bold mb-4">More Posts</h3>
-                  <div class="space-y-4">
-                      <div v-for="post in morePosts" :key="post.id" class="flex gap-4">
-                          <img :src="post.image" :alt="post.title" class="w-20 h-20 object-cover rounded" />
-                          <div>
-                              <h4 class="font-semibold">{{ post.title }}</h4>
-                              <p class="text-sm text-gray-400">{{ post.date }}</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+        </div>
+    </div>
+  
+      <div class="mx-auto  pb-8">
+        <div class="space-y-4 text-[18px]">
+          <p>
+            At HKKO GOLD, we understand the importance of safeguarding your wealth in an unpredictable world. Traditional savings methods, like bank accounts, often fail to keep up with inflation, eroding the purchasing power of your hard-earned money. That's why we offer gold and silver savings, a timeless solution to preserve and grow your wealth.
+          </p>
+          <p>
+            To further enhance transaction efficiency and authenticity, we've partnered with two renowned courier services, ensuring every trade is secure, transparent, and reliable from start to finish.
+          </p>
+          <p>
+            Before you continue reading, you read on <a href="#" class="text-red-800 hover:underline">gold stocks gold and silver savings</a> to gain a full understanding to make an informed decision on saving our offers.
+          </p>
+        </div>
+  
+        <!-- Why Choose Section -->
+        <section class="mt-12">
+          <h2 class="text-3xl font-bold mb-2">Why Choose Gold and Silver Savings?</h2>
+          <p class=" mb-8 text-[18px]">
+            Gold and silver have stood the test of time as reliable stores of value. Unlike regular bank savings, where inflation eats into your returns, these precious metals retain their worth, providing unmatched protection and growth potential.
+          </p>
+  
+          <h3 class="text-2xl font-bold mb-4">Key Benefits of Gold and Silver Savings with HKKO GOLD.</h3>
+          <ol class="list-decimal ml-6 space-y-2 text-[18px]">
+            <li>
+              <span class="font-bold">Preserve Your Wealth:</span> Gold and silver are impervious to inflation, ensuring your savings maintain their real value over time
+            </li>
+            <li>
+              <span class="font-bold">Hedge Against Economic Instability:</span> Protect your wealth from economic downturns and currency devaluation with these safe-haven assets
+            </li>
+            <li>
+              <span class="font-bold">Diversify Your Portfolio:</span> Our gold and silver savings options help you reduce risk by balancing your investment portfolio
+            </li>
+            <li>
+              <span class="font-bold">Global Liquidity:</span> Whether you invest physically or digitally, gold and silver are universally recognized assets you can rely on anywhere
+            </li>
+            <li>
+              <span class="font-bold">Secure and Independent:</span> Enjoy the peace of mind that comes with savings not tied to traditional banking systems
+            </li>
+          </ol>
+  
+          <p class="mt-4 text-[18px]">
+            <a href="#" class="text-red-800 underline">Read more on the full benefits of saving in gold and silver.</a>
+          </p>
+        </section>
+  
+        <!-- Options Section -->
+        <section class="mt-12">
+          <h2 class="text-[30px] font-bold mb-3">Our Gold and Silver Savings Options</h2>
+          <p class="text-[18px] mb-8">
+            We offer a range of saving options to suit your needs, from physical to digital options, or easy-to-trade investment tools.
+          </p>
+  
+          <div class="space-y-2">
+            <div>
+              <h3 class="text-[18px] font-bold mb-4">1. Physical Gold and Silver</h3>
+              <ul class="space-y-2 text-[18px]">
+                <li>
+                  <span class="font-bold">What We Offer:</span> Premium-grade gold and silver coins, bars, and bullion
+                </li>
+                <li>
+                  <span class="font-bold">Why Choose This:</span> Direct physical ownership and true store of value (ownership)
+                </li>
+                <li>
+                  <span class="font-bold">Your Experience:</span> Receive secure delivery or opt for safe storage through our trusted partners
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h3 class="text-[18px] font-bold my-7">2. Gold and Silver ETFs (Exchange-Traded Funds)</h3>
+              <ul class="space-y-2 text-[18px]">
+                <li>
+                  <span class="font-bold">What We Offer:</span> Access to leading ETFs like SPDR Gold Shares (GLD) or iShares Silver Trust (SLV)
+                </li>
+                <li>
+                  <span class="font-bold">Why Choose This:</span> Convenient trading on stock exchanges without handling physical metals
+                </li>
+                <li>
+                  <span class="font-bold">Your Experience:</span> Buy, hold, or sell ETF shares effortlessly through our platform
+                </li>
+                <li> Find out more
+                  <a href="#" class="text-red-800 text-[16px] underline"> what gold and silver ETFs are and How to Use advantage the instrument.</a>
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h3 class="text-[18px] font-bold my-7">3. Automated Savings Plan</h3>
+              <ul class="space-y-2 text-[18px] ">
+                <li>
+                  <span class="font-bold">What We Offer:</span> Save in precious metals through automated monthly contributions
+                </li>
+                <li>
+                  <span class="font-bold">Why Choose This:</span> Build your wealth steadily while benefiting from gold and silver's growth
+                </li>
+                <li>
+                  <span class="font-bold">Your Experience:</span> Watch your savings grow in real time with secure online access
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h3 class="text-[18px] font-bold my-7">4. Digital Gold and Silver</h3>
+              <ul class="space-y-2 text-[18px]">
+                <li>
+                  <span class="font-bold">What We Offer:</span> Secure and convertible digital gold and silver through our trusted digital platform
+                </li>
+                <li>
+                  <span class="font-bold">Why Choose This:</span> Start small and build your savings over time with ease
+                </li>
+                <li>
+                  <span class="font-bold">Your Experience:</span> Enjoy flexibility, liquidity, and transparency at a financial cushion during uncertain times
+                </li>
+              </ul>
+            </div>
           </div>
+        </section>
+  
+        <!-- Why Customers Choose Us -->
+        <section class="mt-12 bg-gray-100 text-[18px] md:p-6">
+          <h2 class="text-3xl font-bold text-red-900 text-center underline my-4">Why Customers Choose Us</h2>
+          <div class="space-y-6">
+            <div>
+              <h3 class="text-lg font-bold mb-2">1. Inflation Protection:</h3>
+              <p class="">
+                Sarah invested in our gold savings account five years ago. While her bank savings lost value due to inflation, her gold savings grew by 25%, preserving her purchasing power
+              </p>
+            </div>
+  
+            <div>
+              <h3 class="text-lg font-bold mb-2">2. Crisis Resilience:</h3>
+              <p class="">
+                During the global pandemic, John diversified his portfolio with silver ETFs through our platform. This decision helped protect his wealth when traditional markets were volatile
+              </p>
+            </div>
+  
+            <div>
+              <h3 class="text-lg font-bold mb-2">3. Legacy Building:</h3>
+              <p class="">
+                As a thoughtful gift to his children, Michael purchased gold bars through our physical gold program. Today, they hold both sentimental and monetary value for his family
+              </p>
+            </div>
+          </div>
+  
+          <p class="mt-4">Read more on <a href="#" class="text-red-800 hover:underline"> the difference in saving in gold and silver as compared to savings</a>
+          </p>
+        </section>
+  
+        <!-- Why Choose HKKO GOLD -->
+        <section class="mt-12">
+          <h2 class="text-3xl font-bold mb-3 text-black">Why Choose HKKO GOLD.</h2>
+          <p class=" mb-2 text-[18px] text-gray-950">
+            We're committed to helping you secure your financial future with trusted gold and silver solutions.
+          </p>
+  
+          <ol class="list-decimal ml-6 space-y-2 text-[18px] text-gray-950">
+            <li>
+              <span class="font-bold">Expert Guidance:</span> Our experienced advisors will help you choose the best options for your needs
+            </li>
+            <li>
+              <span class="font-bold">Transparency:</span> Enjoy clear pricing and detailed market insights
+            </li>
+            <li>
+              <span class="font-bold">Security:</span> Partner with us for safe storage and secure digital transactions
+            </li>
+            <li>
+              <span class="font-bold">Flexibility:</span> Whether you prefer physical or digital savings, we offer customized solutions
+            </li>
+          </ol>
+        </section>
+  
+        <!-- How to Get Started -->
+        <section class="mt-12">
+          <h2 class="text-2xl font-bold mb-6">How to Get Started</h2>
+          <ol class="list-decimal ml-6 space-y-2 text-gray-950 text-[18px]">
+            <li>
+              <span class="font-bold">Explore Your Options:</span> Visit our website or speak with an advisor to discover the gold and silver savings solutions that best suit your goals
+            </li>
+            <li>
+              <span class="font-bold">Make Your Investment:</span> Whether you're buying physical metals, ETFs or opening a savings account, our process is simple and seamless
+            </li>
+            <li>
+              <span class="font-bold">Secure Your Future:</span> Watch your wealth grow while enjoying peace of mind knowing your savings are protected
+            </li>
+          </ol>
+        </section>
+  
+        <!-- Your Future Starts Today -->
+        <section class="border-red-900 bg-gray-100 border-4 mt-12 rounded p-12">
+          <h2 class="text-2xl font-black mb-4 text-[#8B1818]">Your Future Starts Today</h2>
+          <p class="text-[18px] text-gray-900">
+            Don't let inflation and economic uncertainty diminish your financial security. Take control of your wealth with gold and silver savings from [Your Company Name]. Whether you're building a legacy, diversifying your portfolio, or planning for long-term growth, we're here to help.
+          </p>
+        </section>
       </div>
-  </div>
-</template>
-
-<script setup>
-import { UserIcon } from 'lucide-vue-next'
-
-const morePosts = [
-  {
-      id: 1,
-      title: 'Last News Private Placement',
-      date: 'April 15, 2024',
-      image: '/src/images/financial-sector.jpg'
-  },
-  {
-      id: 2,
-      title: 'Private Placement Program',
-      date: 'April 14, 2024',
-      image: '/src/images/golden-rmb-coins-cloth-bag.jpg'
-  },
-  {
-      id: 3,
-      title: 'Gold & Silver Trading',
-      date: 'April 13, 2024',
-      image: '/src/images/wooden-background.jpg'
-  },
-  {
-      id: 4,
-      title: 'Online Trading',
-      date: 'April 13, 2024',
-      image: '/src/images/closeup-shot-pile-shiny-gold-coins-bars.jpg'
-  }
-]
-</script>
+    </div>
+  </template>
+  
+  <script setup>
+  // Component is static, no reactive state needed
+  </script>
+  
+  <style>
+  
+  </style>

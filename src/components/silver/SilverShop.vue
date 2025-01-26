@@ -1,14 +1,14 @@
 <template>
-  <div class="container mx-auto px-4 py-12">
+  <div class="container w-[95%] md:w-[80%] lg:w-[75%] mx-auto px-4 py-12">
     <div class="flex flex-col lg:flex-row gap-8">
       <!-- Sidebar Filters -->
-      <aside class="w-full lg:w-64 flex-shrink-0">
-        <h2 class="text-base font-semibold text-gray-800 mb-6">Filter</h2>
+      <aside class="w-full lg:w-64 flex-shrink-0 mr-8">
+        <h2 class="text-2xl font-bold text-gray-800 mb-6">Filter</h2>
         
         <!-- Type of Product -->
         <div class="mb-6">
-          <div class="flex justify-between items-center mb-4">
-            <h3 class="text-sm font-medium text-gray-700">Type of product</h3>
+          <div class="flex justify-between items-center">
+            <h3 class="text-base font-bold text-gray-700">Type of product</h3>
             <button 
               @click="clearFilters"
               class="text-red-600 hover:text-red-800 text-sm"
@@ -17,11 +17,11 @@
             </button>
           </div>
           
-          <div class="space-y-2">
+          <div class="space-y-4 mt-4">
             <label 
               v-for="type in productTypes" 
               :key="type"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-3"
             >
               <input
                 type="checkbox"
@@ -29,19 +29,19 @@
                 v-model="selectedTypes"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-xs text-gray-600">{{ type }}</span>
+              <span class="text-base text-gray-600">{{ type }}</span>
             </label>
           </div>
         </div>
 
         <!-- Price Range -->
-        <div class="mb-6">
-          <h3 class="text-sm font-medium text-gray-700 mb-3">Price per product</h3>
-          <div class="space-y-2">
+        <div class="my-8">
+          <h3 class="text-base font-bold text-gray-700 mb-3">Price per product</h3>
+          <div class="space-y-4">
             <label 
               v-for="range in priceRanges" 
               :key="range"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-4"
             >
               <input
                 type="checkbox"
@@ -49,19 +49,19 @@
                 v-model="selectedPriceRanges"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-xs text-gray-600">{{ range }}</span>
+              <span class="text-base text-gray-600">{{ range }}</span>
             </label>
           </div>
         </div>
 
         <!-- Weight -->
-        <div class="mb-6">
-          <h3 class="text-sm font-medium text-gray-700 mb-3">Weight</h3>
-          <div class="space-y-2">
+        <div class="my-8">
+          <h3 class="text-base font-bold text-gray-700 mb-4">Weight</h3>
+          <div class="space-y-4">
             <label 
               v-for="weight in weights" 
               :key="weight"
-              class="flex items-center space-x-2"
+              class="flex items-center space-x-4"
             >
               <input
                 type="checkbox"
@@ -69,7 +69,7 @@
                 v-model="selectedWeights"
                 class="rounded border-gray-300 text-red-600 focus:ring-red-500"
               />
-              <span class="text-xs text-gray-600">{{ weight }}</span>
+              <span class="text-base text-gray-600">{{ weight }}</span>
             </label>
           </div>
         </div>
@@ -78,14 +78,14 @@
       <!-- Main Content -->
       <main class="flex-1">
         <div class="flex justify-between items-center mb-6">
-          <h1 class="text-2xl font-bold text-gray-800">Shop Silver Products</h1>
+          <h1 class="text-2xl font-bold text-gray-800 ">Shop Silver Products</h1>
           
           <!-- Sort Dropdown -->
           <select 
             v-model="sortOrder"
-            class="border-gray-300 rounded-md text-gray-600 px-4 py-1 text-xs"
+            class="border-gray-300 rounded-md text-gray-600 px-4 text-sm"
           >
-            <option value="" disabled>Select sorting option &nbsp;</option>
+            <option value="" disabled>Select sorting option &nbsp; &nbsp; &nbsp;</option>
             <option value="high-to-low">Price: High to Low</option>
             <option value="low-to-high">Price: Low to High</option>
           </select>
@@ -96,9 +96,9 @@
         <div 
           v-for="product in sortedProducts" 
           :key="product.id"
-          class="bg-white rounded-lg shadow-md pb-3 transition-transform duration-300"
+          class="bg-white rounded-lg shadow-md pb-3 transition-transform duration-300 hover:-translate-y-1"
         >
-          <div class="relative aspect-square mb-4">
+          <div class="relative aspect-square mb-3">
             <img 
               :src="product.image" 
               :alt="product.name"
@@ -106,9 +106,9 @@
             />
           </div>
 
-          <div class="text-center px-6 pb-4">
-            <div class="text-base font-bold mb-2">${{ product.price.toFixed(2) }}</div>
-            <h3 class="text-sm font-medium text-gray-800 mb-4">{{ product.name }}</h3>
+          <div class="text-center px-6 pb-3">
+            <div class="text-lg font-bold mb-2">${{ product.price.toFixed(2) }}</div>
+            <h3 class="text-base font-medium text-gray-800 mb-4">{{ product.name }}</h3>
             
             <div class="flex justify-center gap-2">
               <button 
@@ -170,16 +170,17 @@ const priceRanges = [
   '$500.00 - $1,000.00',
   '$1,000.00 - $2,000.00',
   '$2,000.00 - $3,000.00',
-  '$3,000.00 - $+'
+  '$3,000.00+'
 ]
 const selectedPriceRanges = ref([])
 
 const weights = [
   '< 10 grams',
-  '200 - 50 grams',
+  '10 - 50 grams',
   '50 - 100 grams',
   '100 - 200 grams',
-  '200 - + grams'
+  '200 - 500 grams',
+  '500+ grams'
 ]
 const selectedWeights = ref([])
 
@@ -190,7 +191,7 @@ const products = [
     id: 1,
     name: '5 gram Gold Coin - HKKO Gold',
     price: 5.00,
-    image: '/src/images/scattered-table.jpg',
+    image: '/scattered-table.jpg',
     type: 'Coins',
     weight: '5 grams'
   },
@@ -198,7 +199,7 @@ const products = [
     id: 2,
     name: '1 oz Gold Coin - HKKO Gold',
     price: 1.00,
-    image: '/src/images/wooden-background.jpg',
+    image: '/wooden-background.jpg',
     type: 'Coins',
     weight: '31.1 grams'
   },
@@ -206,7 +207,7 @@ const products = [
     id: 3,
     name: '10 gram Gold Coin - HKKO Gold',
     price: 1.00,
-    image: '/src/images/closeup-shot-pile-shiny-gold-coins-bars.jpg',
+    image: '/closeup-shot-pile-shiny-gold-coins-bars.jpg',
     type: 'Coins',
     weight: '10 grams'
   },
@@ -214,7 +215,7 @@ const products = [
     id: 4,
     name: '10 gram minted bar - HKKO Gold',
     price: 10.00,
-    image: '/src/images/golden-rmb-coins-cloth-bag.jpg',
+    image: '/golden-rmb-coins-cloth-bag.jpg',
     type: 'Minted Bar',
     weight: '10 grams'
   }

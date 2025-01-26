@@ -37,6 +37,7 @@ import PPPService from './pages/PPPService.vue';
 import MintPage from './pages/MintPage.vue';
 import GlobalLogistics from './pages/GlobalLogistics.vue';
 import Contact from './pages/Contact.vue';
+import OnlineTrading from './pages/OnlineTrading.vue';
 
 
 
@@ -70,6 +71,7 @@ const routes = [
   { path: '/mintpage', name: 'Mint Page', component: MintPage},
   { path: '/globallogistics', name: 'Global Logistics', component: GlobalLogistics},
   { path: '/contact', name: 'Contact', component: Contact},
+  { path: '/online-trading', name: 'Online Trading', component: OnlineTrading},
   {
     path: '/dashboard',
     component: DashbaoardLayout,

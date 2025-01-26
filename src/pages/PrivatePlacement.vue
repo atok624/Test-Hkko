@@ -1,5 +1,5 @@
 <template>
-  <div class="min-h-screen w-[95%] md:w-[75%] lg:w-[70%] mx-auto my-10 bg-white text-gray-800">
+  <div class="min-h-screen w-[95%] md:w-[85%] lg:w-[55%] mx-auto my-10 bg-white text-gray-800">
     <!-- Hero Section -->
     <div class="relative h-[350px] bg-gray-900  rounded-3xl mb-12">
       <img src="/img.jpeg" alt="Private Placement Program"

@@ -3,7 +3,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
       <!-- Text Content -->
       <div class="space-y-6">
-        <h2 class="text-4xl font-bold text-gray-800">
+        <h2 class="text-4xl font-bold text-center text-gray-800">
           We Deliver Exceptional Solutions
         </h2>
         
