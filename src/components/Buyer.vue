@@ -1,132 +1,95 @@
 <template>
-    <div class="max-w-7xl mx-auto px-4 flex flex-col justify-center items-center sm:px-6 lg:px-8 py-8">
-      <h1 class="text-4xl font-bold text-gray-900 mb-6">The Buyer's Calculator</h1>
+  <div class="min-h-screen bg-white">
+    <div class="max-w-[1200px] mx-auto px-6 py-12">
+      <h1 class="text-[32px] font-Bold text-black mb-6">The Buyer's Calculator</h1>
       
-      <p class="text-gray-700 text-base mb-12 max-w-5xl">
+      <p class="text-[15px] leading-[1.6] text-[#666] mb-8">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. Lorem Ipsum has been the industry's.
       </p>
-  
-      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+
+      <div class="flex flex-col lg:flex-row gap-8">
         <!-- Calculator Form -->
-        <div class="space-y-6 lg:col-span-1 mb-10 ">
-          <div class="space-y-2">
-            <label for="metal" class="block text-lg text-gray-600">
-              Choose Your Metal
-            </label>
-            <select
-              id="metal"
+        <div class="w-full lg:w-1/3">
+          <div class="mb-4">
+            <label class="block text-[14px] text-[#666] mb-2">Choose Your Metal</label>
+            <select 
               v-model="selectedMetal"
-              class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-900 focus:border-red-900 text-gray-900"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#8B1D1D]"
             >
-              <option value="" disabled>Select Metal Type</option>
               <option value="gold">Gold</option>
               <option value="silver">Silver</option>
             </select>
           </div>
-  
-          <div class="space-y-2">
-            <label for="budget" class="block text-lg text-gray-600">
-              Enter Your Budget (US $)
-            </label>
-            <div class="relative">
-              <input
-                id="budget"
-                type="number"
-                v-model="budget"
-                placeholder="USD"
-                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-red-900 focus:border-red-900 text-gray-900"
-                min="0"
-                step="0.01"
-              />
-            </div>
+
+          <div class="mb-6">
+            <label class="block text-[14px] text-[#666] mb-2">Enter Your Budget</label>
+            <input 
+              type="text"
+              v-model="budget"
+              placeholder="USD"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-1 focus:ring-[#8B1D1D]"
+            >
           </div>
-  
-          <button
-            @click="calculateResults"
-            class="w-full bg-red-900 text-white py-4 px-6 rounded-lg hover:bg-red-800 transition-colors duration-200 font-medium text-lg"
+
+          <button 
+            @click="showResults"
+            class="w-full bg-[#8B1D1D] text-white py-3 rounded-md hover:bg-[#7a1919] transition-colors"
           >
-            Get Results
+            Results
           </button>
         </div>
-  
-        <!-- Results Section -->
-        <div class="space-y-6 lg:col-span-2">
-          <h2 class="text-3xl font-bold text-gray-900">Here's what we got for you</h2>
-          
-          
-          <div class="relative">
-            <div class="flex">
-            <img
-              src="/src/images/hkko.png"
-              alt="Stack of gold bars representing investment options"
-              class="w-full rounded-lg object-cover mb-6"
-            />
-            
-            <p class="text-gray-700 flex self-center text-lg mb-8">
-              A long-term investment that lets you sell some of your gold for cash on occasion. This selection mixes bigger products with low fees to give you the best price per ounce of gold for your long-term investment, and smaller products with average fees that are easier to sell in the short-term
-            </p>
 
-          </div>
-            
-  
-            <div v-if="!hasCalculated" class="bg-gray-50 p-6 rounded-lg border border-gray-200">
-              <p class="text-gray-600 text-lg">
-                Products will populate here when you calculate.
+        <!-- Results Section -->
+        <div class="w-full lg:w-2/3">
+          <h2 class="text-[24px] font-bold text-black mb-6">Here's what we got for you</h2>
+          
+          <div class="flex gap-6">
+            <div class="w-1/2">
+              <img 
+                src="/buyer.png"
+                alt="Gold bars"
+                class="w-full h-56 rounded-lg"
+              />
+            </div>
+            <div class="w-1/2">
+              <p class="text-[17px] leading-[1.6] text-[#666]">
+                A long-term investment that lets you sell some of your gold for cash on occasion. This selection mixes bigger products with low fees to give you the best price per ounce of gold for your long-term investment, and smaller products with average fees that are easier to sell in the short-term
               </p>
             </div>
-  
-            <div v-else class="space-y-4">
-              <div v-for="(product, index) in calculatedProducts" :key="index" class="bg-white p-6 rounded-lg shadow-sm border border-gray-200">
-                <h3 class="font-semibold text-lg text-gray-900">{{ product.name }}</h3>
-                <p class="text-gray-600">{{ product.description }}</p>
-                <p class="text-red-900 font-bold mt-2">${{ product.price.toLocaleString() }}</p>
-              </div>
-            </div>
+          </div>
+
+          <div class="mt-8 bg-red-50 p-4 rounded-lg" v-if="cartEmpty">
+            <p class="text-[15px] text-[#666]">Your cart is currently empty.</p>
+          </div>
+
+          <!-- Dynamic Results would appear here based on calculations -->
+          <div v-if="showResultsSection" class="mt-8">
+            <!-- Results content would be populated here -->
           </div>
         </div>
       </div>
     </div>
-  </template>
-  
-  <script setup>
-  import { ref } from 'vue'
-  
-  const selectedMetal = ref('')
-  const budget = ref('')
-  const hasCalculated = ref(false)
-  const calculatedProducts = ref([])
-  
-  const calculateResults = () => {
-    if (!selectedMetal.value || !budget.value) {
-      alert('Please fill in all fields')
-      return
-    }
-  
-    // Simulate API call or calculation
-    hasCalculated.value = true
-    calculatedProducts.value = [
-      {
-        name: '1 oz Gold Bar',
-        description: 'Pure gold bar, perfect for long-term investment',
-        price: 1950.00
-      },
-      {
-        name: '1/2 oz Gold Bar',
-        description: 'Smaller denomination for flexible selling options',
-        price: 985.00
-      },
-      {
-        name: '1/4 oz Gold Coin',
-        description: 'Popular choice for both collecting and investment',
-        price: 495.00
-      }
-    ]
-  }
-  </script>
+  </div>
+</template>
 
-  <style scoped>
-  img {
-    max-width: 250px;
-    height: auto;
+<script setup>
+import { ref } from 'vue'
+
+// Form state
+const selectedMetal = ref('gold')
+const budget = ref('')
+const cartEmpty = ref(true)
+const showResultsSection = ref(false)
+
+// Show results function
+const showResults = () => {
+  if (budget.value && !isNaN(parseFloat(budget.value))) {
+    showResultsSection.value = true
+    // Calculate and display results based on metal type and budget
   }
-  </style>
+}
+</script>
+
+<style>
+
+</style>

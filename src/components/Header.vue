@@ -148,7 +148,8 @@
                 class="absolute left-1/2 transform -translate-x-1/2 top-full mt-2 text-sm bg-white shadow-md rounded-md z-50 w-40 text-gray-800"
                 @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
                 <li>
-                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-200">Invest</router-link>
+                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-200">Modules
+                </router-link>
               </li>
                 <li>
                 <router-link to="#" class="block px-4 py-2 hover:bg-red-200">Investor information</router-link>
@@ -179,7 +180,7 @@
                 class="absolute left-1/2 transform -translate-x-1/2 top-full mt-2 text-sm bg-white shadow-md rounded-md z-50 w-40 text-gray-800"
                 @mouseenter="handleDropdownEnter(item.name)" @mouseleave="handleDropdownLeave(item.name)">
                 <li>
-                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">Services</router-link>
+                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">All Services</router-link>
               </li>
               <li>
                 <router-link to="/pppservices" class="block px-4 py-2 hover:bg-red-200">PPP Services</router-link>
@@ -246,7 +247,7 @@
             <ul v-if="item.name === 'Invest' && dropdownOpenFor === 'Invest'"
               class="mt-2 bg-red-800 rounded-md text-sm">
               <li>
-                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-700">Invest</router-link>
+                <router-link to="/invest" class="block px-4 py-2 hover:bg-red-700">Modules</router-link>
               </li>
               <li>
                 <router-link to="#" class="block px-4 py-2 hover:bg-red-700">Investor information</router-link>
@@ -276,7 +277,7 @@
             <ul v-if="item.name === 'Services' && dropdownOpenFor === 'Services'"
                 class="mt-2 bg-red-800 rounded-md text-sm">
                 <li>
-                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">Services</router-link>
+                <router-link to="/services" class="block px-4 py-2 hover:bg-red-200">All Services</router-link>
               </li>
               <li>
                 <router-link to="/pppservices" class="block px-4 py-2 hover:bg-red-200">PPP Services</router-link>

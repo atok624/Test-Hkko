@@ -38,6 +38,9 @@ import MintPage from './pages/MintPage.vue';
 import GlobalLogistics from './pages/GlobalLogistics.vue';
 import Contact from './pages/Contact.vue';
 import OnlineTrading from './pages/OnlineTrading.vue';
+import SellingGuide from './pages/SellingGuide.vue';
+import BuyingGuide from './pages/BuyingGuide.vue';
+import BlogPost from './pages/BlogPost.vue';
 
 
 
@@ -72,6 +75,9 @@ const routes = [
   { path: '/globallogistics', name: 'Global Logistics', component: GlobalLogistics},
   { path: '/contact', name: 'Contact', component: Contact},
   { path: '/online-trading', name: 'Online Trading', component: OnlineTrading},
+  { path: '/selling-guide', name: 'Selling Guide', component: SellingGuide},
+  { path: '/buying-guide', name: 'Buying Guide', component: BuyingGuide},
+  { path: '/blogpost', name: 'Blog Posts', component: BlogPost},
   {
     path: '/dashboard',
     component: DashbaoardLayout,

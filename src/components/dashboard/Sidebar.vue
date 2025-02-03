@@ -42,7 +42,8 @@
     ShoppingBag,
     Bookmark,
     Trash2,
-    LogOut
+    LogOut,
+    StoreIcon
   } from 'lucide-vue-next'
   
   const router = useRouter()
@@ -58,6 +59,12 @@
       name: 'Profile Settings',
       path: '/dashboard/profile',
       icon: Settings,
+      iconClass: 'text-red-900'
+    },
+    {
+      name: 'Insured Storage',
+      path: '/dashboard/profile',
+      icon: StoreIcon,
       iconClass: 'text-red-900'
     },
     {

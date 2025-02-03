@@ -40,19 +40,19 @@ const services = [
     title: 'Private Placement Program',
     description: 'Earn a 3% monthly return with our Private Placement Program, backed by gold assets and industry expertise, offering stable, high-yield investments managed transparently.',
     image: '/src/images/PPP.png',
-    link: '#private-placement'
+    link: '/private-placement'
   },
   {
     title: 'Gold and Silver Savings',
     description: 'Stop saving in the bank! Your bank savings loses value. Save in gold and silver today, Protect your wealth, beat inflation and secure your financial future with us.',
     image: '/src/images/Gold & Silver Savings.png',
-    link: '#gold-silver'
+    link: '/gold-silver'
   },
   {
     title: 'Online Trading',
     description: 'Trade with confidence on our platform. Buy, sell, or exchange your physical gold or silver effortlessly with verified listings, insured delivery, and real-time pricing.',
     image: '/src/images/HKKO GOLD Online 11 (1).png',
-    link: '#online-trading'
+    link: '/online-trading'
   }
 ]
 </script>

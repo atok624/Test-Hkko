@@ -36,7 +36,7 @@
             <ul class="space-y-2 text-base">
               <li><a href="/gold" class="hover:underline">Gold</a></li>
               <li><a href="/silver" class="hover:underline">Silver</a></li>
-              <li><a href="investment" class="hover:underline">Online Trading</a></li>
+              <li><a href="/online-trading" class="hover:underline">Online Trading</a></li>
             </ul>
           </div>
 
@@ -58,8 +58,8 @@
             <h3 class="text-base font-black mb-4">RESOURCES</h3>
             <ul class="space-y-2 text-base">
               <li><a href="/blog" class="hover:underline">Blog</a></li>
-              <li><a href="#" class="hover:underline">Buyers Guide</a></li>
-              <li><a href="#" class="hover:underline">Sellers Guide</a></li>
+              <li><a href="/buying-guide" class="hover:underline">Buyers Guide</a></li>
+              <li><a href="/selling-guide" class="hover:underline">Sellers Guide</a></li>
               <li><a href="/faq" class="hover:underline">FAQ</a></li>
               <li><a href="charts" class="hover:underline">Charts</a></li>
               <li><a href="/calculator" class="hover:underline">Calculator</a></li>
@@ -82,7 +82,7 @@
           <div>
             <h3 class="text-base font-black mb-4">ASSISTANCE</h3>
             <ul class="space-y-2 text-base">
-              <li><a href="#" class="hover:underline">Request A Call Back</a></li>
+              <li><a href="/contact" class="hover:underline">Request A Call Back</a></li>
               <li><a href="#" class="hover:underline">Pricing</a></li>
               <li><a href="#" class="hover:underline">Storage Guide</a></li>
               <li><a href="#" class="hover:underline">Investment Guide</a></li>
