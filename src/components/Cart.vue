@@ -81,7 +81,7 @@
             </label>
             <label class="flex items-center gap-3">
               <input type="radio" v-model="paymentMethod" value="gold-avenue" class="form-radio text-red-700 focus:ring-red-600" />
-              <span class="text-sm md:text-base">GOLD AVENUE Pay (free)</span>
+              <span class="text-sm md:text-base">HKKO Pay (free)</span>
             </label>
             <label class="flex items-center gap-3">
               <input type="radio" v-model="paymentMethod" value="credit-card" class="form-radio text-red-700 focus:ring-red-600" />
