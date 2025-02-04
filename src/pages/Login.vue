@@ -2,7 +2,7 @@
   <div class="flex items-center justify-center p-6 bg-gray-100">
     <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
       <h2 class="text-2xl font-bold mb-2 text-center">Welcome to HKKO GOLD</h2>
-      <p class="text-sm text-gray-600 mb-6 text-center">please enter your details below to login</p>
+      <p class="text-sm text-gray-600 mb-6 text-center">Please enter your details below to login</p>
       
       <!-- Success Message -->
       <div v-if="success" class="text-center text-green-600 mb-4">
